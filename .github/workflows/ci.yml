@@ -1,67 +1,33 @@
 
 name: CI 
 
- 
-
-# Controls when the workflow will run 
-
 on: 
+  pull_request: 
+    branches: [ "main" ] 
 
- 
 
-pull_request: 
-
-branches: [ "main" ] 
-
- 
-
-workflow_dispatch: 
-
- 
+  workflow_dispatch: 
 
 jobs: 
-
-build: 
-
-runs-on: ubuntu-latest 
-
-env: 
-
-DBT_USER: ${{ secrets.DBT_USER }} 
-
-DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }} 
+  build: 
+    runs-on: ubuntu-latest 
+    env: 
+      DBT_USER: ${{ secrets.DBT_USER }} 
+      DBT_PASSWORD: ${{ secrets.DBT_PASSWORD }} 
 
  
-
 steps: 
-
 - uses: actions/checkout@v2 
 
- 
-
 - name: Setup Python 
-
-uses: actions/setup-python@v2 
-
-with: 
-
-python-version: '3.9' 
-
- 
+  uses: actions/setup-python@v2 
+  with: 
+    python-version: '3.9' 
 
 - name: Install dbt 
+  run: pip install dbt-snowflake 
 
-run: pip install dbt-snowflake 
-
- 
-
-- name: Run dbt deps 
-
-run: dbt deps --profiles-dir . 
-
- 
 
 - name: Run dbt build 
-
-run: dbt build --profiles-dir . 
+  run: dbt build --profiles-dir . 
 
