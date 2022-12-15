@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: humanresources
+    database: analytics_dev
+    schema: humanresources
+    tables:
+      - name: department
+      - name: employee_department_history
+      - name: employee

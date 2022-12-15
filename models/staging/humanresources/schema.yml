@@ -1,0 +1,89 @@
+version: 2
+
+models:
+  - name: stg_humanresources__department
+    description: A staging model for Adventure Works department.
+    columns:
+      - name:	DEPARTMENT_ID
+        description:	Primary key for Department records. Identity / Auto increment column
+        tests:
+          - unique
+      - name:	DEPARTMENT_NAME
+        description:	Name of the department.
+      - name:	GROUP_NAME
+        description:	Name of the group to which the department belongs.
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_humanresources__employee_department_history
+    description: A staging model for Adventure Works department history.
+    columns:
+      - name:	BUSINESS_ENTITY_ID
+        description:	Employee identification number. Foreign key to Employee.BusinessEntityID.
+      - name:	DEPARTMENT_ID
+        description:	Department in which the employee worked including currently. Foreign key to Department.DepartmentID.
+      - name:	SHIFT_ID
+        description:	Identifies which 8-hour shift the employee works. Foreign key to Shift.Shift.ID.
+      - name:	START_DATE
+        description:	Date the employee started work in the department.
+      - name:	END_DATE
+        description:	Date the employee left the department. NULL = Current department.
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_humanresources__employee
+    description: A staging model for employees at Adventure Works department.
+    columns:
+    - name:	BUSINESS_ENTITY_ID
+      tests:
+        - unique
+      description:	Primary key for Employee records.  Foreign key to BusinessEntity.BusinessEntityID.
+    - name:	NATIONAL_ID_NUMBER
+      description:	Unique national identification number such as a social security number.
+    - name:	LOGIN_ID
+      description:	Network login. Test2
+    - name:	ORGANIZATION_NODE
+      description:	Where the employee is located in corporate hierarchy.
+    - name:	ORGANIZATION_LEVEL
+      description:	The depth of the employee in the corporate hierarchy. Computed [OrganizationNode].[GetLevel]()
+    - name:	JOB_TITLE
+      description:	Work title such as Buyer or Sales Representative.
+    - name:	BIRTH_DAY
+      description:	Date of birth.
+    - name:	MARITAL_STATUS
+      description:	M = Married S = Single
+      tests:
+          - accepted_values:
+              values:
+                - 'S'
+                - 'M'
+    - name:	GENDER
+      description:	M = Male F = Female
+      tests:
+          - accepted_values:
+              values:
+                - 'M'
+                - 'F'
+    - name:	HIRE_DATE
+      description:	Employee hired on this date.
+    - name:	SALARIED_FLAG
+      description:	Job classification. 0 = Hourly not exempt from collective bargaining. TRUE = Salaried exempt from collective bargaining.Default FALSE
+      tests:
+          - accepted_values:
+              values:
+                - 'TRUE'
+                - 'FALSE'
+    - name:	VACATION_HOURS
+      description:	Number of available vacation hours. Default 0
+    - name:	SICK_LEAVE_HOUR
+      description:	Number of available sick leave hours. Default 0
+    - name:	CURRENT_FLAG
+      description:	"FALSE = Inactive 1 = Active Default: TRUE"
+      tests:
+          - accepted_values:
+              values:
+                - 'TRUE'
+                - 'FALSE'
+    - name:	ROW_GUID
+      description:	ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()
+    - name:	MODIFIED_DATE
+      description:	Date and time the record was last updated. Default getdate()
+            

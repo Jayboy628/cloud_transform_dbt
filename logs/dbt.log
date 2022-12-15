@@ -17,3 +17,137 @@
 [0m14:57:37.219732 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10732ea60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1075bd910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b0b040>]}
 [0m14:57:37.220282 [debug] [MainThread]: Flushing usage events
 [0m14:57:37.434458 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-12-15 16:21:26.519290 | dc5e80f5-f8a2-41c2-8f9e-c86fbd0e6cc4 ==============================
+[0m16:21:26.519307 [info ] [MainThread]: Running with dbt=1.3.0
+[0m16:21:26.520304 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m16:21:26.520517 [debug] [MainThread]: Tracking: tracking
+[0m16:21:26.540121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f9a9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f17610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f96ca0>]}
+[0m16:21:26.549283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f60850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f9a8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ffa610>]}
+[0m16:21:26.549567 [debug] [MainThread]: Flushing usage events
+[0m16:21:27.127810 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2022-12-15 16:22:39.088176 | fb63c161-f591-478c-a746-61e72157d8e9 ==============================
+[0m16:22:39.088185 [info ] [MainThread]: Running with dbt=1.3.0
+[0m16:22:39.088539 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m16:22:39.088677 [debug] [MainThread]: Tracking: tracking
+[0m16:22:39.103683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eaad040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea71880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eaa20d0>]}
+[0m16:22:39.110922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea81460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb04b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb04910>]}
+[0m16:22:39.111208 [debug] [MainThread]: Flushing usage events
+[0m16:22:39.568878 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2022-12-15 16:28:08.670326 | 99b6a971-d30a-4005-a054-cdc20309d0fe ==============================
+[0m16:28:08.670333 [info ] [MainThread]: Running with dbt=1.3.0
+[0m16:28:08.670756 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m16:28:08.670977 [debug] [MainThread]: Tracking: tracking
+[0m16:28:08.685588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10674a280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10670f820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106740070>]}
+[0m16:28:08.692744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10671e6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067a1880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1067a18e0>]}
+[0m16:28:08.692998 [debug] [MainThread]: Flushing usage events
+[0m16:28:09.279106 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2022-12-15 18:09:34.483084 | 74a5dc47-7436-49af-82a0-04b93da51f4e ==============================
+[0m18:09:34.483098 [info ] [MainThread]: Running with dbt=1.3.0
+[0m18:09:34.486640 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:09:34.486884 [debug] [MainThread]: Tracking: tracking
+[0m18:09:34.509843 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b782b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b3d850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b6d0a0>]}
+[0m18:09:34.519923 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b4c400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111bcfb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111bcf8e0>]}
+[0m18:09:34.520347 [debug] [MainThread]: Flushing usage events
+[0m18:09:36.322356 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2022-12-15 18:12:38.256931 | 911b5457-daec-4c04-98e8-0326a92956e1 ==============================
+[0m18:12:38.256939 [info ] [MainThread]: Running with dbt=1.3.0
+[0m18:12:38.257304 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:12:38.257457 [debug] [MainThread]: Tracking: tracking
+[0m18:12:38.270811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1fd2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1c2850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1f20a0>]}
+[0m18:12:38.279448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1d1400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e254b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e2548e0>]}
+[0m18:12:38.279788 [debug] [MainThread]: Flushing usage events
+[0m18:12:39.077649 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2022-12-15 18:14:05.173961 | 539e743a-35a4-4b60-8ec2-af3bb8aeb04f ==============================
+[0m18:14:05.173969 [info ] [MainThread]: Running with dbt=1.3.0
+[0m18:14:05.176692 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:14:05.176862 [debug] [MainThread]: Tracking: tracking
+[0m18:14:05.192155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bcfb2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bcc0850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bcf00a0>]}
+[0m18:14:05.201045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bccf400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd52b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bd528e0>]}
+[0m18:14:05.201410 [debug] [MainThread]: Flushing usage events
+[0m18:14:05.809011 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2022-12-15 18:14:43.407172 | 348674f3-d196-461e-b4b6-44168a172a51 ==============================
+[0m18:14:43.407180 [info ] [MainThread]: Running with dbt=1.3.0
+[0m18:14:43.407633 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:14:43.407825 [debug] [MainThread]: Tracking: tracking
+[0m18:14:43.422394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044cf040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104493880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044c40d0>]}
+[0m18:14:43.432835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044a3460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044b9d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1044b92e0>]}
+[0m18:14:43.433156 [debug] [MainThread]: Flushing usage events
+[0m18:14:44.464531 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_USER'
+
+
+============================== 2022-12-15 18:16:47.129479 | 913a7996-7893-42b3-b93e-7d8c681e3eec ==============================
+[0m18:16:47.129486 [info ] [MainThread]: Running with dbt=1.3.0
+[0m18:16:47.129835 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:16:47.130042 [debug] [MainThread]: Tracking: tracking
+[0m18:16:47.143481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca8b280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca50820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ca81070>]}
+[0m18:16:48.392689 [debug] [MainThread]: Executing "git --help"
+[0m18:16:48.401792 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:16:48.402548 [debug] [MainThread]: STDERR: "b''"
+[0m18:16:48.433739 [debug] [MainThread]: Acquiring new snowflake connection "debug"
+[0m18:16:48.435305 [debug] [MainThread]: Using snowflake connection "debug"
+[0m18:16:48.435610 [debug] [MainThread]: On debug: select 1 as id
+[0m18:16:48.435841 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:16:50.396537 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.96 seconds
+[0m18:16:50.397634 [debug] [MainThread]: On debug: Close
+[0m18:16:50.717037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e45ca30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dc24430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dda4ca0>]}
+[0m18:16:50.717538 [debug] [MainThread]: Flushing usage events
+[0m18:16:51.330357 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-12-15 18:17:47.317579 | 2aebc719-1c6e-4eab-9135-8968edb1857e ==============================
+[0m18:17:47.317587 [info ] [MainThread]: Running with dbt=1.3.0
+[0m18:17:47.317949 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:17:47.318101 [debug] [MainThread]: Tracking: tracking
+[0m18:17:47.332456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090c6040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10908a880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090bb0d0>]}
+[0m18:17:47.679837 [debug] [MainThread]: Executing "git --help"
+[0m18:17:47.688567 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:17:47.689494 [debug] [MainThread]: STDERR: "b''"
+[0m18:17:47.695615 [debug] [MainThread]: Acquiring new snowflake connection "debug"
+[0m18:17:47.697339 [debug] [MainThread]: Using snowflake connection "debug"
+[0m18:17:47.697629 [debug] [MainThread]: On debug: select 1 as id
+[0m18:17:47.697787 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:17:49.343291 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.65 seconds
+[0m18:17:49.345131 [debug] [MainThread]: On debug: Close
+[0m18:17:49.673861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10aa14ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a33daf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a33d970>]}
+[0m18:17:49.674394 [debug] [MainThread]: Flushing usage events
+[0m18:17:50.214547 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-12-15 18:19:11.676533 | c0e00647-2e2e-4f9d-96bf-66a9547dc6fb ==============================
+[0m18:19:11.676540 [info ] [MainThread]: Running with dbt=1.3.0
+[0m18:19:11.676883 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:19:11.677057 [debug] [MainThread]: Tracking: tracking
+[0m18:19:11.691119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d64250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d297f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d5f040>]}
+[0m18:19:11.700698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d38370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112dbb850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112dbb8b0>]}
+[0m18:19:11.701065 [debug] [MainThread]: Flushing usage events
+[0m18:19:12.398982 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
