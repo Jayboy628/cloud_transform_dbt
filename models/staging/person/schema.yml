@@ -97,12 +97,7 @@ models:
               - 'GC'
 
     - name:	NAME_STYLE
-      description:	FALSE = The data in FirstName and LastName are stored in western style (first name, last name) order.  TRUE = Eastern style (last name, first name) order. Default FALSE
-      tests:
-        - accepted_values:
-            values:
-              - 'TRUE'
-              - 'FALSE'
+      description:	"FALSE = The data in FirstName and LastName are stored in western style (first name, last name) order.  TRUE = Eastern style (last name, first name) order. Default FALSE"
     - name:	TITLE
       description:	A courtesy title. For example, Mr. or Ms.
     - name:	FIRST_NAME
