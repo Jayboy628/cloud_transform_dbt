@@ -74,7 +74,7 @@ models:
       - name:	EMAIL_ADDRESS
         description:	E-mail address for the person.
       - name:	ROW_GUID
-        description:	'ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_person__person
@@ -95,6 +95,7 @@ models:
               - 'EM'
               - 'VC'
               - 'GC'
+
     - name:	NAME_STYLE
       description:	FALSE = The data in FirstName and LastName are stored in western style (first name, last name) order.  TRUE = Eastern style (last name, first name) order. Default FALSE
       tests:
