@@ -14,7 +14,7 @@ models:
         description:	Name of the group to which the department belongs.
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
-  - name: stg_humanresources__employeedepartmenthistory
+  - name: stg_humanresources__employee_department_history
     description: A staging model for Adventure Works department history.
     columns:
       - name:	BUSINESS_ENTITY_ID

@@ -15,7 +15,7 @@ final as
 		ENDDATE as end_date,
 		MODIFIEDDATE as modified_date
 
-	from employeedepartmenthistory
+	from employee_department_history
 	
 
 )
