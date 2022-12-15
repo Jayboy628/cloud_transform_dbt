@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: humanresources
-    database: analytics_dev
+    database: raw
     schema: humanresources
     tables:
       - name: department
