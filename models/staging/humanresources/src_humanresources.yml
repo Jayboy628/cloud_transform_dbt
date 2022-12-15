@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: humanresources
+    database: raw
+    schema: humanresources
+    tables:
+      - name: department
+      - name: employeedepartmenthistory
+      - name: employee
