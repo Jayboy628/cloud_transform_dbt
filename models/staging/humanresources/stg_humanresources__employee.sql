@@ -1,6 +1,6 @@
 with employee as (
     
-    select * from {{ source('hr','employee') }}
+    select * from {{ source('humanresources','employee') }}
 ),
 
 final as 

@@ -1,6 +1,6 @@
 with employee_department_history as (
 
-	select * from {{source('hr','employee_department_history') }}
+	select * from {{source('humanresources','employee_department_history') }}
 ),
 
 final as 
@@ -15,7 +15,8 @@ final as
 		ENDDATE as end_date,
 		MODIFIEDDATE as modified_date
 
-	from employee_department_history
+	from employeedepartmenthistory
+	
 
 )
 

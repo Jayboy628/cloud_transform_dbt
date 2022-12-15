@@ -1,6 +1,6 @@
 with department as (
     
-    select * from {{ source('hr','department') }}
+    select * from {{ source('humanresources','department') }}
 ),
 
 final as 
