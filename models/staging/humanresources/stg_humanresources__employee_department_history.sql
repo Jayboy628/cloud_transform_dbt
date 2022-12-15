@@ -17,7 +17,6 @@ final as
 
 	from employee_department_history
 	
-
 )
 
 select * from final
