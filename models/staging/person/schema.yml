@@ -1,0 +1,153 @@
+version: 2
+
+models:
+  - name: stg_person__address
+    description: A staging model for person address at Adventure Works.
+    columns:
+      - name: BUSINESS_ENTITY_ID
+      - name: NATIONAL_ID_NUMBER
+      - name: ADDRESS_ID
+      - name: ADDRESS_LINE_1
+      - name: ADDRESS_LINE_2
+      - name: CITY
+      - name: STATE_PROVINCE_ID
+      - name: POSTAL_CODE
+      - name: ROW_GUID
+      - name: MODIFIED_DATE
+  - name: stg_person__business_entity_address
+    description: A staging model for person entity address at Adventure Works.
+    columns:
+      - name:	BUSINESS_ENTITY_ID
+        description:	Primary key. Foreign key to BusinessEntity.BusinessEntityID.
+      - name:	ADDRESS_ID
+        description:	Primary key. Foreign key to Address.AddressID.
+      - name:	ADDRESS_TYPE_ID
+        description:	Primary key. Foreign key to AddressType.AddressTypeID.
+      - name:	ROW_GUID
+        description:	ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_person__business_entity_contact
+    description: A staging model for person entity at Adventure Works.
+    columns:
+      - name:	BUSINESS_ENTITY_ID
+        description:	Primary key. Foreign key to BusinessEntity.BusinessEntityID.
+      - name:	PERSON_ID
+        description:	Primary key. Foreign key to Person.BusinessEntityID.
+      - name:	CONTACT_TYPE_ID
+        description:	Primary key.  Foreign key to ContactType.ContactTypeID.
+      - name:	ROW_GUID
+        description: "ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_person__contact_type
+    description: A staging model for person contact type at Adventure Works.
+    columns:
+      - name:	CONTACT_TYPE_ID
+        description:	Primary key for ContactType records. Identity / Auto increment column
+        tests:
+          - unique
+      - name:	NAME
+        description:	Contact type description.
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_person__country_region
+    description: A staging model for person country region Adventure Works.
+    columns:
+      - name:	COUNTRY_REGION_CODE
+        description:	ISO standard code for countries and regions.
+        tests:
+          - unique
+      - name:	NAME
+        description:	Country or region name.
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_person__email_address
+    description: A staging model for persons email for Adventure Works.
+    columns:
+      - name:	BUSINESS_ENTITY_ID
+        description:	Primary key. Person associated with this email address.  Foreign key to Person.BusinessEntityID
+      - name:	EMAIL_ADDRESS_ID
+        description:	Primary key. ID of this email address. Identity / Auto increment column
+        tests:
+          - unique
+      - name:	EMAIL_ADDRESS
+        description:	E-mail address for the person.
+      - name:	ROW_GUID
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_person__person
+    description: A staging model for the persons at Adventure Works.
+    columns:
+    - name:	BUSINESS_ENTITY_ID
+      description:	Primary key for Person records.
+      tests:
+        - unique
+    - name:	PERSON_TYPE
+      description:	Primary type of person SC = Store Contact, IN = Individual (retail) customer, SP = Sales person, EM = Employee (non-sales), VC = Vendor contact, GC = General contact
+      tests:
+        - accepted_values:
+            values:
+              - 'SC'
+              - 'IN'
+              - 'SP'
+              - 'EM'
+              - 'VC'
+              - 'GC'
+
+    - name:	NAME_STYLE
+      description:	"FALSE = The data in FirstName and LastName are stored in western style (first name, last name) order.  TRUE = Eastern style (last name, first name) order. Default FALSE"
+    - name:	TITLE
+      description:	A courtesy title. For example, Mr. or Ms.
+    - name:	FIRST_NAME
+      description:	First name of the person.
+    - name:	LAST_NAME
+      description:	Middle name or middle initial of the person.
+    - name:	MIDDLE_NAME
+      description:	Last name of the person.
+    - name:	SUFFIX
+      description:	Surname suffix. For example, Sr. or Jr.
+    - name:	ROW_GUID
+      description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default: newid()"
+    - name:	MODIFIED_DATE
+      description:	Date and time the record was last updated. Default getdate()
+  - name: stg_person__person_phone
+    description: A staging model for the persons phone at Adventure Works.
+    columns:
+      - name:	BUSINESS_ENTITY_ID
+        description:	Business entity identification number. Foreign key to Person.BusinessEntityID.
+      - name:	PHONE_NUMBER
+        description:	Telephone number identification number.
+      - name:	PHONE_NUMBER_TYPE_ID
+        description:	Kind of phone number. Foreign key to PhoneNumberType.PhoneNumberTypeID.
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_person__state_province
+    description: A staging model for the persons phone at Adventure Works.
+    columns:
+      - name:	STATE_PROVINCE_ID
+        description:	Primary key for StateProvince records. Identity / Auto increment column
+        tests:
+          - unique
+      - name:	STATE_PROVINCE_CODE
+        description:	ISO standard state or province code.
+        tests:
+        - unique
+      - name:	COUNTRY_REGION_CODE
+        description:	ISO standard country or region code. Foreign key to CountryRegion.CountryRegionCode.
+      - name:	IS_ONLY_STATE_PROVINCE_FLAG
+        description:	"False = StateProvinceCode exists. True = StateProvinceCode unavailable, using CountryRegionCode. Default: True"
+        tests:
+          - accepted_values:
+              values:
+                - 'TRUE'
+                - 'FALSE'
+      - name:	NAME
+        description:	State or province description.
+      - name:	TERRITORY_ID
+        description:	ID of the territory in which the state or province is located. Foreign key to SalesTerritory.SalesTerritoryID.
+      - name:	ROW_GUID
+        description:	ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample Default newid()
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
