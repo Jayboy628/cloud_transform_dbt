@@ -14,7 +14,7 @@ models:
         description:	Name of the group to which the department belongs.
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
-  - name: stg_humanresources__employee_department_history
+  - name: stg_humanresources__employeedepartmenthistory
     description: A staging model for Adventure Works department history.
     columns:
       - name:	BUSINESS_ENTITY_ID
@@ -40,10 +40,6 @@ models:
       description:	Unique national identification number such as a social security number.
     - name:	LOGIN_ID
       description:	Network login. Test2
-    - name:	ORGANIZATION_NODE
-      description:	Where the employee is located in corporate hierarchy.
-    - name:	ORGANIZATION_LEVEL
-      description:	The depth of the employee in the corporate hierarchy. Computed [OrganizationNode].[GetLevel]()
     - name:	JOB_TITLE
       description:	Work title such as Buyer or Sales Representative.
     - name:	BIRTH_DAY

@@ -6,5 +6,5 @@ sources:
     schema: humanresources
     tables:
       - name: department
-      - name: employee_department_history
+      - name: employeedepartmenthistory
       - name: employee

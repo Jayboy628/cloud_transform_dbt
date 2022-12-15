@@ -1,6 +1,6 @@
 with employee_department_history as (
 
-	select * from {{source('humanresources','employee_department_history') }}
+	select * from {{source('humanresources','employeedepartmenthistory') }}
 ),
 
 final as 

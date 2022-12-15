@@ -11,8 +11,6 @@ final as
             BusinessEntityID as business_entity_id,
             NationalIDNumber as national_id_number,
             LoginID as login_id,
-            OrganizationNode as organization_node,
-            OrganizationLevel as organization_level,
             JobTitle as job_title,
             BirthDate as birth_day,
             MaritalStatus as marital_status,
