@@ -1,0 +1,207 @@
+version: 2
+
+models:
+  - name: stg_sales__customer
+    description: A staging model for customer sales in Adventure Works.
+    columns:
+      - name:	CUSTOMER_ID
+        description:	"Primary key.Identity / Auto increment column"
+        tests:
+          - unique
+      - name:	PERSON_ID
+        description:	Foreign key to Person.BusinessEntityID
+      - name:	STORE_ID
+        description:	Foreign key to Store.BusinessEntityID
+      - name:	TERRITORY_ID
+        description:	ID of the territory in which the customer is located. Foreign key to SalesTerritory.SalesTerritoryID.
+      - name:	ACCOUNT_NUMBER
+        description:	"Unique number identifying the customer assigned by the accounting system. Computed isnull('AW'+[ufnLeadingZeros]([CustomerID])'')"
+      - name:	ROW_GUID
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_sales__sales_order_header
+    description: A staging model for sales order header in Adventure Works.
+    columns:
+      - name:	SALES_ORDER_ID
+        description:	"Primary key.Identity / Auto increment column"
+        tests:
+          - unique
+      - name:	REVISION_NUMBER
+        description:	Incremental number to track changes to the sales order over time. Default 0
+      - name:	ORDER_DATE
+        description:	Dates the sales order was created. Default getdate()
+      - name:	DUE_DATE
+        description:	Date the order is due to the customer.
+      - name:	SHIP_DATE
+        description:	Date the order was shipped to the customer.
+      - name:	STATUS
+        description:	"Order current status. 1 = In process; 2 = Approved; 3 = Backordered; 4 = Rejected; 5 = Shipped; 6 = CancelledDefault: 1"
+      - name:	ONLINE_ORDER_FLAG
+        description:	0 = Order placed by sales person. 1 = Order placed online by customer. Default 1
+        tests:
+          - accepted_values:
+              values:
+                - 'True'
+                - 'False'
+      - name:	SALES_ORDER_NUMBER
+        description:	"Unique sales order identification number. Computed: isnull(N'SO'+CONVERT([nvarchar](23),[SalesOrderID]),N'*** ERROR ***')"
+      - name:	PURCHASE_ORDER_NUMBER
+        description:	Customer purchase order number reference.
+      - name:	ACCOUNT_NUMBER
+        description:	Financial accounting number reference.
+      - name:	CUSTOMER_ID
+        description:	Customer identification number. Foreign key to Customer.BusinessEntityID.
+      - name:	SALES_PERSON_ID
+        description:	Sales person who created the sales order. Foreign key to SalesPerson.BusinessEntityID.
+      - name:	TERRITORY_ID
+        description:	Territory in which the sale was made. Foreign key to SalesTerritory.SalesTerritoryID.
+      - name:	BILL_TO_ADDRESS_ID
+        description:	Customer billing address. Foreign key to Address.AddressID.
+      - name:	SHIP_TO_ADDRESS_ID
+        description:	Customer shipping address. Foreign key to Address.AddressID.
+      - name:	SHIP_METHOD_ID
+        description:	Shipping method. Foreign key to ShipMethod.ShipMethodID.
+      - name:	CREDIT_CARD_ID
+        description:	Credit card identification number. Foreign key to CreditCard.CreditCardID.
+      - name:	CREDIT_CARD_APPROVAL_CODE
+        description:	Approval code provided by the credit card company.
+      - name:	CURRENCY_RATED_ID
+        description:	Currency exchange rate used. Foreign key to CurrencyRate.CurrencyRateID.
+      - name:	SUB_TOTAL
+        description:	"Sales subtotal. Computed as SUM(SalesOrderDetail.LineTotal)for the appropriate SalesOrderID.Default: 0.00"
+      - name:	TAX_AMOUNT
+        description:	"Tax amount. Default: 0.00"
+      - name:	FREIGHT
+        description:	"Shipping cost.Default: 0.00"
+      - name:	TOTAL_DUE
+        description:	Total due from customer. Computed as Subtotal + TaxAmt + Freight. Computed isnull(([SubTotal]+[TaxAmt])+[Freight],(0))
+      - name:	COMMENT
+        description:	Sales representative comments.
+      - name:	ROW_GUID
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_sales__sales_order_detail
+    description: A staging model for sales order detail in Adventure Works.
+    columns:
+      - name:	SALES_ORDER_ID
+        description:	Primary key. Foreign key to SalesOrderHeader.SalesOrderID.
+      - name:	SALES_ORDER_DETAIL_ID
+        description:	Primary key. One incremental unique number per product sold. Identity / Auto increment column
+      - name:	CARRIER_TRACKING_NUMBER
+        description:	Shipment tracking number supplied by the shipper.
+      - name:	ORDER_QTY
+        description:	Quantity ordered per product.
+      - name:	PRODUCT_ID
+        description:	Product sold to customer. Foreign key to Product.ProductID.
+      - name:	SPECIAL_OFFER_ID
+        description:	Promotional code. Foreign key to SpecialOffer.SpecialOfferID.
+      - name:	UNIT_PRICE
+        description:	Selling price of a single product.
+      - name:	UNIT_PRICE_DISCOUNT
+        description:	"Discount amount.Default: 0.0"
+      - name:	LINE_TOTAL
+        description:	"Per product subtotal. Computed as UnitPrice * (1 - UnitPriceDiscount) * OrderQty.Computed: isnull(([UnitPrice]*((1.0)-[UnitPriceDiscount]))*[OrderQty],(0.0))"
+      - name:	ROW_GUID
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default: newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_sales__sales_person
+    description: A staging model for sales order detail in Adventure Works.
+    columns:
+      - name:	BUSINESS_ENTITY_ID
+        description:	Primary key for SalesPerson records. Foreign key to Employee.BusinessEntityID
+        tests:
+          - unique
+      - name:	TERRITORY_ID
+        description:	Territory currently assigned to. Foreign key to SalesTerritory.SalesTerritoryID.
+      - name:	SALES_QUITA
+        description:	Projected yearly sales.
+      - name:	BONUS
+        description:	Bonus due if quota is met. Default 0.00
+      - name:	COMMISSION_PCT
+        description:	Commision percent received per sale. Default 0.00
+      - name:	SALES_YTD
+        description:	Sales total year to date. Default 0.00
+      - name:	SALES_LAST_YEAR
+        description:	Sales total of previous year. Default 0.00
+      - name:	ROW_GUID
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default: newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_sales__sales_reason
+    description: A staging model reason for sales order in Adventure Works.
+    columns:
+      - name:	SALES_REASON_ID
+        description:	Primary key for SalesReason records. Identity / Auto increment column
+        tests:
+          - unique
+      - name:	NAME
+        description:	Sales reason description.
+      - name:	REASON_TYPE
+        description:	Category the sales reason belongs to.
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_sales__sales_territory
+    description: A staging model for territory in Adventure Works.
+    columns:
+    - name:	TERRITORY_ID
+      description:	Primary key for SalesTerritory records. Identity / Auto increment column
+    - name:	NAME
+      description:	Sales territory description
+    - name:	COUNTRY_REGION_CODE
+      description:	ISO standard country or region code. Foreign key to CountryRegion.CountryRegionCode.
+    - name:	GROUP_NAME
+      description:	Geographic area to which the sales territory belong.
+    - name:	SALES_YTD
+      description:	Sales in the territory year to date. Default 0.00
+    - name:	SALES_LAST_YEAR
+      description:	Sales in the territory the previous year. Default 0.00
+    - name:	COST_YTD
+      description:	Business costs in the territory year to date. Default 0.00
+    - name:	COST_LAST_YEAR
+      description:	Business costs in the territory the previous year. Default 0.00
+    - name:	ROW_GUID
+      description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()"
+    - name:	MODIFIED_DATE
+      description:	Date and time the record was last updated. Default getdate()
+  - name: stg_sales__special_offer
+    description: A staging model for special offers in Adventure Works.
+    columns:
+      - name:	SPECIAL_OFFER_ID
+        description:	Primary key for SpecialOffer records. Identity / Auto increment column
+      - name:	DESCRIPTION
+        description:	Discount description.
+      - name:	DISCOUNT_PCT
+        description:	Discount precentage. Default 0.00
+      - name:	TYPE
+        description:	Discount type category.
+      - name:	CATEGORY
+        description:	Group the discount applies to such as Reseller or Customer.
+      - name:	START_DATE
+        description:	Discount start date.
+      - name:	END_DATE
+        description:	Discount end date.
+      - name:	MIN_QTY
+        description:	Minimum discount percent allowed. Default 0
+      - name:	MAX_QTY
+        description:	Maximum discount percent allowed.
+      - name:	ROW_GUID
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_sales__store
+    description: A staging model store in Adventure Works.
+    columns:
+      - name:	BUSINESS_ENTITY_ID,
+        description:	Primary key. Foreign key to Customer.BusinessEntityID.
+      - name:	NAME,
+        description:	Name of the store.
+      - name:	SALES_PERSON_ID,
+        description:	ID of the sales person assigned to the customer. Foreign key to SalesPerson.BusinessEntityID.
+      - name:	ROW_GUID,
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+
