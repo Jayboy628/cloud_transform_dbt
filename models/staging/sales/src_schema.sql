@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: sales
-    database: advent19_dev
+    database: raw
     schema: sales
     tables:
       - name: customer
