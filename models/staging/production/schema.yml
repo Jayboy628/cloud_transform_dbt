@@ -1,0 +1,103 @@
+version: 2
+
+models:
+  - name: stg_production__product
+    description: A staging model for products for Adventure Works.
+    columns:
+    - name:	PRODUCT_ID
+      description:	"Primary key for Product records. Identity / Auto increment column"
+    - name:	NAME
+      description:	Name of the product.
+    - name:	PRODUCT_NUMBER
+      description:	Unique product identification number.
+    - name:	MAKE_FLAG
+      description:	"0 = Product is purchased, 1 = Product is manufactured in-house. Default 1"
+      tests:
+          - accepted_values:
+              values:
+                - 'TRUE'
+                - 'FALSE'
+    - name:	FINISHED_GOODS_FLAG
+      description:	"0 = Product is not a salable item. 1 = Product is salable. Default 1"
+      tests:
+        - accepted_values:
+            values:
+              - 'TRUE'
+              - 'FALSE'
+    - name:	COLOR
+      description:	Product color.
+    - name:	SAFETY_STOCK_LEVEL
+      description:	Minimum inventory quantity.
+    - name:	REORDER_POINT
+      description:	Inventory level that triggers a purchase order or work order.
+    - name:	STANDARD_COST
+      description:	Standard cost of the product.
+    - name:	LIST_PRICE
+      description:	Selling price.
+    - name:	SIZE
+      description:	Product size.
+    - name:	SIZE_UNIT_MEASURE_CODE
+      description:	Unit of measure for Size column.
+    - name:	WEIGHT_UNIT_MEASURE_CODE
+      description:	Unit of measure for Weight column.
+    - name:	WEIGHT
+      description:	Product weight.
+    - name:	DAYS_TO_MANUFACTURE
+      description:	Number of days required to manufacture the product.
+    - name:	PRODUCT_LINE
+      description:	"R = Road, M = Mountain, T = Touring, S = Standard"
+    - name:	CLASS
+      description:	"H = High, M = Medium, L = Low"
+    - name:	STYLE
+      description:	"W = Womens, M = Mens, U = Universal"
+    - name:	PRODUCT_SUBCATEGORY_ID
+      description:	Product is a member of this product subcategory. Foreign key to ProductSubCategory.ProductSubCategoryID.
+    - name:	PRODUCT_MODEL_ID
+      description:	Product is a member of this product model. Foreign key to ProductModel.ProductModelID.
+    - name:	SELL_START_DATE
+      description:	Date the product was available for sale.
+    - name:	SELL_END_DATE
+      description:	Date the product was no longer available for sale.
+    - name:	DISCONTINUED_DATE
+      description:	Date the product was discontinued.
+    - name:	ROW_GUID
+      description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
+    - name:	MODIFIED_DATE
+      description:	Date and time the record was last updated. Default getdate()
+  - name: stg_production__product_category
+    description: A staging model for products in the respective category for Adventure Works.
+    columns:
+      - name:	PRODUCT_CATEGORY_ID
+        description:	"Primary key for ProductCategory records. Identity / Auto increment column"
+        tests:
+          - unique
+      - name:	NAME
+        description:	Category description.
+      - name:	ROW_GUID
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample Default newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_production__product_model
+    description: A staging model for product models for Adventure Works.
+    columns:
+      - name:	PRODUCT_MODEL_ID
+        description:	"Primary key for ProductModel records. Identity / Auto increment column"
+      - name:	NAME
+        description:	Product model description.
+      - name:	ROW_GUID
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default: newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()
+  - name: stg_production__product_subcategory
+    description: A staging model for products in the respective category for Adventure Works.
+    columns:
+      - name:	PRODUCT_SUBCATEGORY_ID,
+        description:	"Primary key for ProductSubcategory records. Identity / Auto increment column"
+      - name:	PRODUCT_CATEGORY_ID,
+        description:	Product category identification number. Foreign key to ProductCategory.ProductCategoryID.
+      - name:	NAME,
+        description:	Subcategory description.
+      - name:	ROW_GUID,
+        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default newid()"
+      - name:	MODIFIED_DATE
+        description:	Date and time the record was last updated. Default getdate()

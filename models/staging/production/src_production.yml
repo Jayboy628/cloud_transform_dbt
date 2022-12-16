@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: production
+    database: raw
+    schema: production
+    tables:
+      - name: product
+      - name: productcategory
+      - name: productsubcategory
+      - name: productmodel
+      
