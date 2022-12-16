@@ -21,4 +21,3 @@ cloud_transform_dbt:
       user: "{{env_var('DBT_USER')}}"
       warehouse: TRANSFORM_WH
   target: dev
-
