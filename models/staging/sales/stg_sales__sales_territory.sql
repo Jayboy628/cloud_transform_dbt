@@ -1,6 +1,6 @@
 with sales_territory as (
 
-	select * from {{ source('sales','sales_territory')}}
+	select * from {{ source('sales','salesterritory')}}
 ),
 
 final as 
