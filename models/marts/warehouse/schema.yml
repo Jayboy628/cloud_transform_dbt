@@ -2,4 +2,4 @@ version: 2
 
 models:
   - name: dim_territory
-  
+  - name: dim_product
