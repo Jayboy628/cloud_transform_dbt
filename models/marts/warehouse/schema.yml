@@ -3,3 +3,4 @@ version: 2
 models:
   - name: dim_territory
   - name: dim_product
+  - name: dim_production__product_category
