@@ -4,3 +4,4 @@ models:
   - name: dim_territory
   - name: dim_product
   - name: dim_production__product_category
+  - name: dim_production__product_subcategory
