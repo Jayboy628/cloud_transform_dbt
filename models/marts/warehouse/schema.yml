@@ -6,3 +6,4 @@ models:
   - name: dim_production__product_category
   - name: dim_production__product_subcategory
   - name: dim_employee
+  - name: dim_customer
