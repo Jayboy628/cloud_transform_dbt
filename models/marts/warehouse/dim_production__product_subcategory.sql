@@ -1,7 +1,7 @@
 
 with product_subcategory as 
 (
-    select * from {{ref('-')}}
+    select * from {{ref('stg_production__product_subcategory')}}
 ),
 
 product_category as
