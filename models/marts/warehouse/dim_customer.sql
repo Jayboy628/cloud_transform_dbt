@@ -78,7 +78,7 @@ store as
 
 (
     select
-    md5('c.person_id', 'store_id')as customer_key
+    md5(c.person_id :: varchar(10) || store_id :: varchar(10))as customer_key
     ,case when c.person_id is not null then c.person_id else store_id end as Customer_ID
     ,case when store_id is not null then 'Retailer' else 'Online' end as Channel
     ,case when store_id is not null then store_id :: varchar(10)||' '|| s.name  else
