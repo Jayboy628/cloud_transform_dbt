@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: dates
+    database: raw
+    schema: dates
+    tables:
+      - name: dates
