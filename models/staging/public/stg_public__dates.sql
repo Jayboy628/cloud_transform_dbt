@@ -24,7 +24,7 @@ final as
             FiscalYear as fiscal_year,
             FiscalSemester as fiscal_semester
             
-        from dates
-        
+        from dates       
 
 )
+select * from final
