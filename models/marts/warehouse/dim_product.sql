@@ -14,7 +14,7 @@ product_model as
 product_subcategory as 
 
 (
-    select * from {{ref('stg_production__product_subcategory')}}
+    select * from {{ref('dim_product_subcategory')}}
 ),
 
 final as 
