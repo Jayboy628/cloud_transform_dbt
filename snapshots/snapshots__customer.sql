@@ -3,15 +3,14 @@
 {{
   config(
     target_database='ANALYTICS_DEV'
-    target_schema = 'snapshots',
+    target_schema = 'warehouse',
     unique_key = 'customerkey',
-    strategy = 'timestamp',
-    updated_at = 'sell_start_date'
+    strategy = 'check',
+    check_cols = ['state_province_code', 'stateprovince', 'city', 'country_region_code', 'country', 'postal_code']
     )
 }}
 
 
-select      *
-from {{ ref('dim_customer') }}
+select * from {{ref('dim_customer')}}
 
 {% endsnapshot %}
