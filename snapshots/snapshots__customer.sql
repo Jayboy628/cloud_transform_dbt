@@ -6,10 +6,9 @@
     target_schema = 'warehouse',
     unique_key = 'customerkey',
     strategy = 'check',
-    check_cols = ['state_province_code', 'stateprovince', 'city', 'country_region_code', 'country', 'postal_code']
+    check_cols = ['city','state_province_code', 'stateprovince', 'country_region_code', 'country', 'postal_code']
     )
 }}
-
 
 select * from {{ref('dim_customer')}}
 
