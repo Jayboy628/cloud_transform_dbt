@@ -30,3 +30,6 @@ jobs:
       - name: Run dbt build 
         run: dbt build --profiles-dir . 
 
+      - name: Run dbt snapshot
+        run: dbt build --profiles-dir .
+
