@@ -4,7 +4,7 @@
 
 {{
   config(
-    target_database='ANALYTICS'
+    target_database='ANALYTICS',
     target_schema = 'snapshots',
     unique_key = 'addressid',
     strategy = 'check',
