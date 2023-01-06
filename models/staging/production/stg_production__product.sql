@@ -1,7 +1,15 @@
 
+{{ config(
+    materialized = 'incremental',
+    unique_key = 'PRODUCTID'
+) }}
+
 with product as (
 
-	select * from {{ source('production','product')}}
+	 select * from {{ source('production','product')}}
+    {% if is_incremental() %}
+    where MODIFIEDDATE >= (select max(MODIFIEDDATE) from {{ this }})
+    {% endif %}
 ),
 
 final as 
