@@ -8,7 +8,7 @@
     target_schema = 'snapshots',
     unique_key = 'addressid',
     strategy = 'timestamp',
-    check_cols = 'modifieddate'
+    updated_at = 'modifieddate'
     )
 }}
 
