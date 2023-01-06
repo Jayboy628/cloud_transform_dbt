@@ -23,8 +23,6 @@ models:
         description:	Primary key. Foreign key to Address.AddressID.
       - name:	ADDRESS_TYPE_ID
         description:	Primary key. Foreign key to AddressType.AddressTypeID.
-      - name:	ROW_GUID
-        description:	ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_person__business_entity_contact
@@ -36,8 +34,6 @@ models:
         description:	Primary key. Foreign key to Person.BusinessEntityID.
       - name:	CONTACT_TYPE_ID
         description:	Primary key.  Foreign key to ContactType.ContactTypeID.
-      - name:	ROW_GUID
-        description: "ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_person__contact_type
@@ -73,8 +69,6 @@ models:
           - unique
       - name:	EMAIL_ADDRESS
         description:	E-mail address for the person.
-      - name:	ROW_GUID
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_person__person
@@ -108,8 +102,6 @@ models:
       description:	Last name of the person.
     - name:	SUFFIX
       description:	Surname suffix. For example, Sr. or Jr.
-    - name:	ROW_GUID
-      description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default: newid()"
     - name:	MODIFIED_DATE
       description:	Date and time the record was last updated. Default getdate()
   - name: stg_person__person_phone
@@ -147,7 +139,5 @@ models:
         description:	State or province description.
       - name:	TERRITORY_ID
         description:	ID of the territory in which the state or province is located. Foreign key to SalesTerritory.SalesTerritoryID.
-      - name:	ROW_GUID
-        description:	ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample Default newid()
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
