@@ -7,6 +7,7 @@
 with product as (
 
 	 select * from {{ source('production','product')}}
+
     {% if is_incremental() %}
     where MODIFIEDDATE >= (select max(MODIFIEDDATE) from {{ this }})
     {% endif %}

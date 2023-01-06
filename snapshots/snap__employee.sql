@@ -1,4 +1,4 @@
-% snapshot snap__employee %}
+{% snapshot snap__employee %}
 
 
 
