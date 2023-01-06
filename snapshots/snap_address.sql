@@ -8,7 +8,7 @@
     target_schema = 'snapshots',
     unique_key = 'addressid',
     strategy = 'check',
-    check_cols = ['city','postal_code']
+    check_cols = ['city','postalcode']
     )
 }}
 
