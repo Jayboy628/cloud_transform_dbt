@@ -12,7 +12,6 @@ final as
 		PRODUCTSUBCATEGORYID as product_subcategory_id,
 		PRODUCTCATEGORYID as product_category_id,
 		NAME as name,
-		ROWGUID as row_guid,
 		MODIFIEDDATE as modified_date
 
 	from product_subcategory

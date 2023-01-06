@@ -11,7 +11,6 @@ final as
 		BUSINESSENTITYID as business_entity_id,
         NAME as name,
         SALESPERSONID as sales_person_id,
-        ROWGUID as row_guid,
         MODIFIEDDATE as modified_date
 		
 	from store

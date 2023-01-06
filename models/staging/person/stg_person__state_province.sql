@@ -15,7 +15,6 @@ final as
         ISONLYSTATEPROVINCEFLAG as is_only_state_province_flag,
         NAME as name,
         TERRITORYID as territory_id,
-        ROWGUID as row_guid,
         MODIFIEDDATE as modified_date
         
     from state_province

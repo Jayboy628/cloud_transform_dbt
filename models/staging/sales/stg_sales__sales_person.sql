@@ -16,7 +16,6 @@ select
 	COMMISSIONPCT as commission_pct,
 	SALESYTD as sales_ytd,
 	SALESLASTYEAR as sales_last_year,
-	ROWGUID as row_guid,
 	MODIFIEDDATE as modified_date
 
 from sales_person

@@ -15,7 +15,6 @@ final as
         City AS city,
         StateProvinceID AS state_province_id,
         PostalCode AS postal_code,
-        rowguid AS row_guid,
         ModifiedDate AS modified_date
 
    from address

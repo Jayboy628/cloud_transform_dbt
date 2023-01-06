@@ -18,7 +18,6 @@ select
 	UNITPRICE as unit_price,
 	UNITPRICEDISCOUNT as unit_price_discount,
 	LINETOTAL as line_total,
-	ROWGUID as row_guid,
 	MODIFIEDDATE as modified_date
 
 from sales_order_detail

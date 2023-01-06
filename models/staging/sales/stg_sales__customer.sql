@@ -14,7 +14,6 @@ final as
 		STOREID as store_id,
 		TERRITORYID as territory_id,
 		ACCOUNTNUMBER as account_number,
-		ROWGUID as row_guid,
 		MODIFIEDDATE as modified_date
 		
 	from customer

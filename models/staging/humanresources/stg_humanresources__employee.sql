@@ -20,7 +20,6 @@ final as
             VacationHours as vacation_hours,
             SickLeaveHours as sick_leave_hour,
             CurrentFlag as current_flag,
-            rowguid as row_guid,
             ModifiedDate as modified_date
             
         from employee

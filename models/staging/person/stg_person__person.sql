@@ -17,7 +17,6 @@ final as
         LASTNAME as last_name,
         MIDDLENAME as middle_name,
         Suffix as suffix,
-        rowguid as row_guid,
         MODIFIEDDATE as modified_date
     
    from person
