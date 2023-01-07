@@ -60,8 +60,6 @@ models:
       description:	Date the product was no longer available for sale.
     - name:	DISCONTINUED_DATE
       description:	Date the product was discontinued.
-    - name:	ROW_GUID
-      description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
     - name:	MODIFIED_DATE
       description:	Date and time the record was last updated. Default getdate()
   - name: stg_production__product_category
@@ -73,8 +71,6 @@ models:
           - unique
       - name:	NAME
         description:	Category description.
-      - name:	ROW_GUID
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample Default newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_production__product_model
@@ -84,8 +80,6 @@ models:
         description:	"Primary key for ProductModel records. Identity / Auto increment column"
       - name:	NAME
         description:	Product model description.
-      - name:	ROW_GUID
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default: newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_production__product_subcategory
@@ -97,7 +91,5 @@ models:
         description:	Product category identification number. Foreign key to ProductCategory.ProductCategoryID.
       - name:	NAME,
         description:	Subcategory description.
-      - name:	ROW_GUID,
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()

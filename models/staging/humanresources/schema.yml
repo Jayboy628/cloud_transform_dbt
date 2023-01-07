@@ -78,8 +78,6 @@ models:
               values:
                 - 'TRUE'
                 - 'FALSE'
-    - name:	ROW_GUID
-      description:	ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()
     - name:	MODIFIED_DATE
       description:	Date and time the record was last updated. Default getdate()
             

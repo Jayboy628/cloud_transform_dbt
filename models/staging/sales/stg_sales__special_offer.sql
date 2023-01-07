@@ -17,7 +17,6 @@ final as
         ENDDATE as end_date,
         MINQTY as min_qty,
         MAXQTY as max_qty,
-        ROWGUID as row_guid,
         MODIFIEDDATE as modified_date
 
     from special_offer

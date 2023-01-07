@@ -33,7 +33,6 @@ select
 	FREIGHT as freight,
 	TOTALDUE as total_due,
 	COMMENT as comment,
-	ROWGUID as row_guid,
 	MODIFIEDDATE as modified_date
 
 from sales_order_header

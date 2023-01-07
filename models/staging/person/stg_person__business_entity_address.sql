@@ -12,7 +12,6 @@ final as
         BUSINESSENTITYID as business_entity_id,
         ADDRESSID as address_id,
         ADDRESSTYPEID as address_type_id,
-        ROWGUID as row_guid,
         MODIFIEDDATE as modified_date
 
    from business_entity_address

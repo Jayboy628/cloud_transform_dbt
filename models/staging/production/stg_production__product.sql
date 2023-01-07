@@ -32,7 +32,6 @@ select
 	SELLSTARTDATE as sell_start_date,
 	SELLENDDATE as sell_end_date,
 	DISCONTINUEDDATE discontinued_date,
-	ROWGUID as row_guid,
 	MODIFIEDDATE as modified_date
 	
 from product

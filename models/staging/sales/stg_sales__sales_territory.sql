@@ -15,7 +15,6 @@ final as
 		SALESLASTYEAR as sales_last_year,
 		COSTYTD as cost_ytd,
 		COSTLASTYEAR as cost_last_year,
-		ROWGUID as row_guid,
 		MODIFIEDDATE as modified_date
 
 	from sales_territory

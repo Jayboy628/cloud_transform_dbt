@@ -16,8 +16,6 @@ models:
         description:	ID of the territory in which the customer is located. Foreign key to SalesTerritory.SalesTerritoryID.
       - name:	ACCOUNT_NUMBER
         description:	"Unique number identifying the customer assigned by the accounting system. Computed isnull('AW'+[ufnLeadingZeros]([CustomerID])'')"
-      - name:	ROW_GUID
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_sales__sales_order_header
@@ -78,8 +76,6 @@ models:
         description:	Total due from customer. Computed as Subtotal + TaxAmt + Freight. Computed isnull(([SubTotal]+[TaxAmt])+[Freight],(0))
       - name:	COMMENT
         description:	Sales representative comments.
-      - name:	ROW_GUID
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default: newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_sales__sales_order_detail
@@ -103,8 +99,6 @@ models:
         description:	"Discount amount.Default: 0.0"
       - name:	LINE_TOTAL
         description:	"Per product subtotal. Computed as UnitPrice * (1 - UnitPriceDiscount) * OrderQty.Computed: isnull(([UnitPrice]*((1.0)-[UnitPriceDiscount]))*[OrderQty],(0.0))"
-      - name:	ROW_GUID
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default: newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_sales__sales_person
@@ -126,8 +120,6 @@ models:
         description:	Sales total year to date. Default 0.00
       - name:	SALES_LAST_YEAR
         description:	Sales total of previous year. Default 0.00
-      - name:	ROW_GUID
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.Default: newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_sales__sales_reason
@@ -162,8 +154,6 @@ models:
       description:	Business costs in the territory year to date. Default 0.00
     - name:	COST_LAST_YEAR
       description:	Business costs in the territory the previous year. Default 0.00
-    - name:	ROW_GUID
-      description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()"
     - name:	MODIFIED_DATE
       description:	Date and time the record was last updated. Default getdate()
   - name: stg_sales__special_offer
@@ -187,8 +177,6 @@ models:
         description:	Minimum discount percent allowed. Default 0
       - name:	MAX_QTY
         description:	Maximum discount percent allowed.
-      - name:	ROW_GUID
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
   - name: stg_sales__store
@@ -200,8 +188,6 @@ models:
         description:	Name of the store.
       - name:	SALES_PERSON_ID,
         description:	ID of the sales person assigned to the customer. Foreign key to SalesPerson.BusinessEntityID.
-      - name:	ROW_GUID,
-        description:	"ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample. Default newid()"
       - name:	MODIFIED_DATE
         description:	Date and time the record was last updated. Default getdate()
 
