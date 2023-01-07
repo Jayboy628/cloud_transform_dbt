@@ -4,12 +4,10 @@
 ) }}
 
 with product as (
-
 	 select * from {{ref('stg_production__product')}}
-
     {% if is_incremental() %}
-    where MODIFIED_DATE >= (select max(MODIFIED_DATE) from {{ this }})
+    where modified_date >= (select max(modified_date) from {{ this }})
     {% endif %}
-),
+)
 
 select * from product

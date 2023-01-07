@@ -6,7 +6,7 @@
   config(
     target_database='ANALYTICS',
     target_schema = 'snapshots',
-    unique_key = 'BusinessEntityID',
+    unique_key = 'businessentityid',
     strategy = 'timestamp',
     updated_at = 'modifieddate'
     )
