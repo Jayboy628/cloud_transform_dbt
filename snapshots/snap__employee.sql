@@ -6,11 +6,12 @@
   config(
     target_database='ANALYTICS',
     target_schema = 'snapshots',
-    unique_key = 'businessentityid',
+    unique_key = "BUSINESSENTITYID",
     strategy = 'timestamp',
     updated_at = 'modifieddate'
     )
 }}
+
 
 select 
             JobTitle as job_title,
