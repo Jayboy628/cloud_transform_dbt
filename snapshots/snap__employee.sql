@@ -13,7 +13,6 @@
 }}
 
 select 
-            BusinessEntityID as business_entity_id,
             JobTitle as job_title,
             HireDate as hire_date
 from {{ source('humanresources','employee') }}
