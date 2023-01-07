@@ -1,7 +1,15 @@
 
+{{ config(
+    materialized = 'incremental'
+) }}
+
 with product as (
 
-	select * from {{ source('production','product')}}
+	 select * from {{ref('stg_production__product')}}
+
+    {% if is_incremental() %}
+    where MODIFIEDDATE >= (select max(MODIFIEDDATE) from {{ this }})
+    {% endif %}
 ),
 
 final as 
@@ -33,7 +41,6 @@ select
 	SELLENDDATE as sell_end_date,
 	DISCONTINUEDDATE discontinued_date,
 	MODIFIEDDATE as modified_date
-	
 from product
 
 )
