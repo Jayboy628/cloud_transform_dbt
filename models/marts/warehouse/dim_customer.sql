@@ -106,8 +106,8 @@ from customer c
     left outer join person_phone pp on pp.business_entity_id = p.business_entity_id
     left outer join business_entity_address bea on bea.business_entity_id = p.business_entity_id
     left outer join business_entity_address bea2 on bea2.business_entity_id = c.store_id
-    left outer join address a on a.address_id = bea.address_id
 
+    left outer join address a on a.address_id = bea.address_id
     left outer join address a2 on a2.address_id = bea2.address_id
     left outer join state_province sp on a.state_province_id = sp.state_province_id
     left outer join state_province sp2 on a2.state_province_id = sp2.state_province_id
