@@ -11,7 +11,7 @@
     )
 }}
 
-{%- set t1_cols = ['STANDARDCOST','LISTPRICE','MODIFIEDDATE'] -%}
+{%- set t1_cols = [ 'STANDARDCOST','LISTPRICE','MODIFIEDDATE' ] -%}
 
 select 
 productid::varchar || '-' || to_char(convert_timezone( 'America/New_York',current_timestamp::timestamp),'YYYYMMDDHH24MISS') as PRODUCT_KEY,
