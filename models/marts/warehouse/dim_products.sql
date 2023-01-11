@@ -40,7 +40,7 @@ select t2.product_key,
       convert_timezone('America/New_York',t2.dbt_valid_to::timestamp) as dbt_valid_to
 from {{ ref('snap__product') }} t2
     left join v_product s
-        on t2.product_id = s.product_id
+        on t2.productid = s.product_id
     {# Checks previous records on it self for incremental runs -#}
     {% if is_incremental() -%}
     left join v_this d
