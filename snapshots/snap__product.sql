@@ -8,8 +8,6 @@
     strategy = 'check',
     check_cols = ['PRODUCTID','PRODUCTMODELID','PRODUCTSUBCATEGORYID']
 
-    --strategy = 'timestamp',
-    --updated_at = 'modifieddate'
     )
 }}
 
