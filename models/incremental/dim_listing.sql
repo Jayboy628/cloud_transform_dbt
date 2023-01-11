@@ -13,7 +13,7 @@
 with v_listing as
 (
     select *,
-           {{ dbt_utils.surrogate_key(t1_cols) }} as t1_key
+           {{dbt_utils.generate_surrogate_key(t1_cols) }} as t1_key
     from {{ source('production','product')}}
 )
 {#- Only creates the view for incremental runs -#}
