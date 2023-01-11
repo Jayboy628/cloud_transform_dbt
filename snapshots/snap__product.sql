@@ -11,7 +11,7 @@
     )
 }}
 
-{%- set t1_cols = ['PRODUCTID','NAME','PRODUCTMODELID','MODELNAME','PRODUCTSUBCATEGORYID'] -%}
+{%- set t1_cols = ['PRODUCTID','NAME','PRODUCTMODELID','PRODUCTSUBCATEGORYID'] -%}
 
 select 
         {{ dbt_utils.generate_surrogate_key(t1_cols) }} as PRODUCT_KEY, *

@@ -36,7 +36,7 @@ select
     case when size_unit_measure_code is null then 'N/A' else size_unit_measure_code end as size_unit_measure_code,
     standard_cost,
     case when list_price < standard_cost then standard_cost else list_price end as list_price,
-    modified_date,
+    p.modified_date,
     case when discontinued_date is not null then 'Discontinued' else 'Current' end as product_current_status
 from product p
         left outer join product_model pm on p.product_model_id = pm.product_model_id
