@@ -3,4 +3,5 @@
 version: 2
 
 snapshots:
-  - name: snapshot__customer
+  - name: snap__address
+  - name: snap__product

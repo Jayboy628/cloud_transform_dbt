@@ -8,3 +8,6 @@ models:
   - name: dim_employee
   - name: dim_customer
   - name: fct_sales
+  - name: dim_products
+  - name: dim_update_timestamp
+  - name: dim_type_1_cols
