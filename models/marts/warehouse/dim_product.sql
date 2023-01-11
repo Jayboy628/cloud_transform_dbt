@@ -1,4 +1,4 @@
-
+-- product table
 with product as 
 
 (
