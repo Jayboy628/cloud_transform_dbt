@@ -20,6 +20,10 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
+seeds:
+  +schema: sales
+  
+
 models:
   cloud_transform_dbt:
     # Config indicated by + and applies to all files under models/example/
