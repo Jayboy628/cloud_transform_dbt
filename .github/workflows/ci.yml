@@ -31,4 +31,7 @@ jobs:
         run: dbt build --profiles-dir . 
       
       - name: Run dbt snapshot
-        run: dbt build --profiles-dir .
+        run: dbt snapshots --profiles-dir .
+
+      - name: Run dbt seed
+        run: dbt seed --profiles-dir .
