@@ -17,6 +17,12 @@ product_subcategory as
     select * from {{ref('dim_production__product_subcategory')}}
 ),
 
+favorite_bikes as 
+
+(
+    select * from {{ref('favorite_bikes')}}
+),
+
 final as 
 
 (
@@ -41,6 +47,7 @@ select
 from product p
         left outer join product_model pm on p.product_model_id = pm.product_model_id
         left outer join product_subcategory psc on psc.product_subcategory_id = p.product_subcategory_id
+        left outer join  favorite_bikes f on p.name = f.Bicycle_Name
 
 )
 
