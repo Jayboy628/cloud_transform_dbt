@@ -43,7 +43,8 @@ select
     standard_cost,
     case when list_price < standard_cost then standard_cost else list_price end as list_price,
     p.modified_date,
-    case when discontinued_date is not null then 'Discontinued' else 'Current' end as product_current_status
+    case when discontinued_date is not null then 'Discontinued' else 'Current' end as product_current_status,
+    f.Bicycle_Name is not null as is_favorite_bicycle
 from product p
         left outer join product_model pm on p.product_model_id = pm.product_model_id
         left outer join product_subcategory psc on psc.product_subcategory_id = p.product_subcategory_id
