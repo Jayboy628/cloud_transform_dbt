@@ -17,11 +17,7 @@ product_subcategory as
     select * from {{ref('dim_production__product_subcategory')}}
 ),
 
-favorite_bikes as 
 
-(
-    select * from {{ref('favorite_bikes')}}
-),
 
 final as 
 
@@ -43,12 +39,10 @@ select
     standard_cost,
     case when list_price < standard_cost then standard_cost else list_price end as list_price,
     p.modified_date,
-    case when discontinued_date is not null then 'Discontinued' else 'Current' end as product_current_status,
-    f.Bicycle_Name is not null as is_favorite_bicycle
+    case when discontinued_date is not null then 'Discontinued' else 'Current' end as product_current_status
 from product p
         left outer join product_model pm on p.product_model_id = pm.product_model_id
         left outer join product_subcategory psc on psc.product_subcategory_id = p.product_subcategory_id
-        left outer join  favorite_bikes f on p.name = f.Bicycle_Name
 
 )
 

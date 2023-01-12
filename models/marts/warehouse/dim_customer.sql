@@ -74,6 +74,13 @@ store as
     select * from {{ref('stg_sales__store')}}
 ),
 
+favorite_bikes as 
+
+(
+    select * from {{ref('favorite_bikes')}}
+),
+
+
  final as
 
 (
@@ -100,6 +107,7 @@ store as
     , case when store_id is not null then cr2.name else cr.name end as Country
     , case when store_id is not null then a2.postal_code else a.postal_code end as postal_code
     , s.name as retailer_name
+    ,f.Bicycle_Name is not null as is_favorite_bicycle
 from customer c 
     left outer join person p on p.business_entity_id = c.person_id
     left outer join email_address ea on ea.business_entity_id = p.business_entity_id
@@ -118,6 +126,8 @@ from customer c
     left outer join business_entity_contact bec on bect.business_entity_id = bec.business_entity_id and bect.contact_type_id = bec.contact_type_id
     left outer join person p2 on p2.business_entity_id = bec.person_id
     left outer join email_address ea2 on ea2.business_entity_id = p2.business_entity_id
+    left outer join  favorite_bikes f on s.name = f.Bicycle_Name
  )
 
 select   * from final
+
