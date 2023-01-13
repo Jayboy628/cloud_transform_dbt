@@ -182,3 +182,426 @@ Parsing Error
 [0m17:46:19.920415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d07e190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cea8640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c8968e0>]}
 [0m17:46:19.920926 [debug] [MainThread]: Flushing usage events
 [0m17:46:20.258115 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-01-12 22:14:25.924473 | e13a9052-0437-4ff9-a6b2-9056a050518c ==============================
+[0m22:14:25.924547 [info ] [MainThread]: Running with dbt=1.3.0
+[0m22:14:25.925638 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['dim_products'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:14:25.925854 [debug] [MainThread]: Tracking: tracking
+[0m22:14:25.926264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcb1190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcb11f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcb1250>]}
+[0m22:14:25.927177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcb11c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcb1220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcb1280>]}
+[0m22:14:25.927445 [debug] [MainThread]: Flushing usage events
+[0m22:14:26.043995 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 2 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+
+
+============================== 2023-01-12 22:14:37.699772 | 1881e050-1a76-4656-b972-05e362264b31 ==============================
+[0m22:14:37.699784 [info ] [MainThread]: Running with dbt=1.3.0
+[0m22:14:37.700182 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m22:14:37.700347 [debug] [MainThread]: Tracking: tracking
+[0m22:14:37.714799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10defab80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10defaf70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df0f5e0>]}
+[0m22:14:37.716893 [debug] [MainThread]: Set downloads directory='/var/folders/4p/8jn3gx555kv9dmnjx324966r0000gn/T/dbt-downloads-0hhvzly8'
+[0m22:14:37.717537 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:14:37.886752 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:14:37.887333 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:14:38.007012 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:14:38.035611 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/audit_helper.json
+[0m22:14:38.165119 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/audit_helper.json 200
+[0m22:14:38.224116 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m22:14:38.488535 [info ] [MainThread]:   Installed from version 1.0.0
+[0m22:14:38.488902 [info ] [MainThread]:   Up to date!
+[0m22:14:38.489275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1881e050-1a76-4656-b972-05e362264b31', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df0fbb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10df0fdf0>]}
+[0m22:14:38.489585 [info ] [MainThread]: Installing dbt-labs/audit_helper
+[0m22:14:38.575484 [info ] [MainThread]:   Installed from version 0.6.0
+[0m22:14:38.575848 [info ] [MainThread]:   Up to date!
+[0m22:14:38.576169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '1881e050-1a76-4656-b972-05e362264b31', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dfc37f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dfc3580>]}
+[0m22:14:38.577062 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dfc0b50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10defa4f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10defab80>]}
+[0m22:14:38.577347 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-01-12 22:14:50.774633 | fa991c38-50dd-4051-8b7a-bf8730ab327f ==============================
+[0m22:14:50.774643 [info ] [MainThread]: Running with dbt=1.3.0
+[0m22:14:50.775076 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m22:14:50.775247 [debug] [MainThread]: Tracking: tracking
+[0m22:14:50.790156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f481f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f3c070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f0cb80>]}
+[0m22:14:51.187200 [debug] [MainThread]: Executing "git --help"
+[0m22:14:51.199437 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:14:51.200322 [debug] [MainThread]: STDERR: "b''"
+[0m22:14:51.206018 [debug] [MainThread]: Acquiring new snowflake connection "debug"
+[0m22:14:51.207605 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:14:51.207808 [debug] [MainThread]: On debug: select 1 as id
+[0m22:14:51.208001 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:14:52.048899 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.84 seconds
+[0m22:14:52.050063 [debug] [MainThread]: On debug: Close
+[0m22:14:52.148040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1090b3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095a1220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109939760>]}
+[0m22:14:52.148599 [debug] [MainThread]: Flushing usage events
+[0m22:14:52.237345 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-01-12 22:15:02.144611 | f1451f71-b9fd-4362-896d-f5af2ec649d0 ==============================
+[0m22:15:02.144638 [info ] [MainThread]: Running with dbt=1.3.0
+[0m22:15:02.145241 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'select': ['dim_products'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:15:02.145440 [debug] [MainThread]: Tracking: tracking
+[0m22:15:02.145874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126a8160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126a81c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126a8220>]}
+[0m22:15:02.177745 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+[0m22:15:02.178115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'f1451f71-b9fd-4362-896d-f5af2ec649d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126c9130>]}
+[0m22:15:02.255200 [debug] [MainThread]: Parsing macros/dim_update_timestamp.sql
+[0m22:15:02.257463 [debug] [MainThread]: Parsing macros/dim_type_1_cols.sql
+[0m22:15:02.260254 [debug] [MainThread]: Parsing macros/generate_schema_name.sql
+[0m22:15:02.261408 [debug] [MainThread]: Parsing macros/catalog.sql
+[0m22:15:02.263629 [debug] [MainThread]: Parsing macros/adapters.sql
+[0m22:15:02.308855 [debug] [MainThread]: Parsing macros/apply_grants.sql
+[0m22:15:02.310050 [debug] [MainThread]: Parsing macros/materializations/test.sql
+[0m22:15:02.311082 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+[0m22:15:02.314941 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+[0m22:15:02.319968 [debug] [MainThread]: Parsing macros/materializations/view.sql
+[0m22:15:02.321534 [debug] [MainThread]: Parsing macros/materializations/table.sql
+[0m22:15:02.327967 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+[0m22:15:02.339272 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+[0m22:15:02.340261 [debug] [MainThread]: Parsing macros/utils/timestamps.sql
+[0m22:15:02.342169 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m22:15:02.342736 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m22:15:02.343366 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m22:15:02.343897 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m22:15:02.344351 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m22:15:02.344891 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+[0m22:15:02.348850 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+[0m22:15:02.351214 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+[0m22:15:02.352748 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+[0m22:15:02.369949 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+[0m22:15:02.383158 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+[0m22:15:02.395682 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+[0m22:15:02.400669 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+[0m22:15:02.402483 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+[0m22:15:02.404270 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+[0m22:15:02.411930 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+[0m22:15:02.426797 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+[0m22:15:02.428507 [debug] [MainThread]: Parsing macros/materializations/models/incremental/strategies.sql
+[0m22:15:02.436855 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+[0m22:15:02.447052 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+[0m22:15:02.463140 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+[0m22:15:02.470031 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+[0m22:15:02.473524 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+[0m22:15:02.479020 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+[0m22:15:02.480346 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+[0m22:15:02.483475 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+[0m22:15:02.485674 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+[0m22:15:02.492235 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+[0m22:15:02.512314 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+[0m22:15:02.513792 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+[0m22:15:02.516178 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+[0m22:15:02.517767 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+[0m22:15:02.518682 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+[0m22:15:02.519599 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+[0m22:15:02.520352 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+[0m22:15:02.521790 [debug] [MainThread]: Parsing macros/etc/statement.sql
+[0m22:15:02.527415 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+[0m22:15:02.536874 [debug] [MainThread]: Parsing macros/utils/except.sql
+[0m22:15:02.537907 [debug] [MainThread]: Parsing macros/utils/replace.sql
+[0m22:15:02.539364 [debug] [MainThread]: Parsing macros/utils/concat.sql
+[0m22:15:02.540439 [debug] [MainThread]: Parsing macros/utils/length.sql
+[0m22:15:02.541489 [debug] [MainThread]: Parsing macros/utils/dateadd.sql
+[0m22:15:02.542850 [debug] [MainThread]: Parsing macros/utils/intersect.sql
+[0m22:15:02.543782 [debug] [MainThread]: Parsing macros/utils/escape_single_quotes.sql
+[0m22:15:02.544976 [debug] [MainThread]: Parsing macros/utils/right.sql
+[0m22:15:02.546325 [debug] [MainThread]: Parsing macros/utils/listagg.sql
+[0m22:15:02.548776 [debug] [MainThread]: Parsing macros/utils/datediff.sql
+[0m22:15:02.550124 [debug] [MainThread]: Parsing macros/utils/safe_cast.sql
+[0m22:15:02.551341 [debug] [MainThread]: Parsing macros/utils/hash.sql
+[0m22:15:02.552532 [debug] [MainThread]: Parsing macros/utils/cast_bool_to_text.sql
+[0m22:15:02.553678 [debug] [MainThread]: Parsing macros/utils/any_value.sql
+[0m22:15:02.554733 [debug] [MainThread]: Parsing macros/utils/position.sql
+[0m22:15:02.555933 [debug] [MainThread]: Parsing macros/utils/literal.sql
+[0m22:15:02.556973 [debug] [MainThread]: Parsing macros/utils/data_types.sql
+[0m22:15:02.563894 [debug] [MainThread]: Parsing macros/utils/array_concat.sql
+[0m22:15:02.564960 [debug] [MainThread]: Parsing macros/utils/bool_or.sql
+[0m22:15:02.566392 [debug] [MainThread]: Parsing macros/utils/last_day.sql
+[0m22:15:02.568984 [debug] [MainThread]: Parsing macros/utils/split_part.sql
+[0m22:15:02.571278 [debug] [MainThread]: Parsing macros/utils/date_trunc.sql
+[0m22:15:02.572519 [debug] [MainThread]: Parsing macros/utils/array_construct.sql
+[0m22:15:02.574135 [debug] [MainThread]: Parsing macros/utils/array_append.sql
+[0m22:15:02.575290 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+[0m22:15:02.577577 [debug] [MainThread]: Parsing macros/adapters/timestamps.sql
+[0m22:15:02.581162 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+[0m22:15:02.584113 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+[0m22:15:02.599501 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+[0m22:15:02.601410 [debug] [MainThread]: Parsing macros/adapters/apply_grants.sql
+[0m22:15:02.615148 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+[0m22:15:02.619738 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+[0m22:15:02.627622 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+[0m22:15:02.638110 [debug] [MainThread]: Parsing macros/python_model/python.sql
+[0m22:15:02.643981 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+[0m22:15:02.646863 [debug] [MainThread]: Parsing macros/web/get_url_host.sql
+[0m22:15:02.648784 [debug] [MainThread]: Parsing macros/web/get_url_path.sql
+[0m22:15:02.651333 [debug] [MainThread]: Parsing macros/web/get_url_parameter.sql
+[0m22:15:02.652804 [debug] [MainThread]: Parsing macros/generic_tests/fewer_rows_than.sql
+[0m22:15:02.657346 [debug] [MainThread]: Parsing macros/generic_tests/equal_rowcount.sql
+[0m22:15:02.661795 [debug] [MainThread]: Parsing macros/generic_tests/relationships_where.sql
+[0m22:15:02.663866 [debug] [MainThread]: Parsing macros/generic_tests/recency.sql
+[0m22:15:02.667999 [debug] [MainThread]: Parsing macros/generic_tests/not_constant.sql
+[0m22:15:02.670484 [debug] [MainThread]: Parsing macros/generic_tests/accepted_range.sql
+[0m22:15:02.672863 [debug] [MainThread]: Parsing macros/generic_tests/not_accepted_values.sql
+[0m22:15:02.675151 [debug] [MainThread]: Parsing macros/generic_tests/at_least_one.sql
+[0m22:15:02.677330 [debug] [MainThread]: Parsing macros/generic_tests/unique_combination_of_columns.sql
+[0m22:15:02.679938 [debug] [MainThread]: Parsing macros/generic_tests/cardinality_equality.sql
+[0m22:15:02.681773 [debug] [MainThread]: Parsing macros/generic_tests/expression_is_true.sql
+[0m22:15:02.683510 [debug] [MainThread]: Parsing macros/generic_tests/not_null_proportion.sql
+[0m22:15:02.686646 [debug] [MainThread]: Parsing macros/generic_tests/sequential_values.sql
+[0m22:15:02.690859 [debug] [MainThread]: Parsing macros/generic_tests/equality.sql
+[0m22:15:02.694356 [debug] [MainThread]: Parsing macros/generic_tests/not_empty_string.sql
+[0m22:15:02.696578 [debug] [MainThread]: Parsing macros/generic_tests/mutually_exclusive_ranges.sql
+[0m22:15:02.706550 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_log_format.sql
+[0m22:15:02.707708 [debug] [MainThread]: Parsing macros/jinja_helpers/_is_relation.sql
+[0m22:15:02.708760 [debug] [MainThread]: Parsing macros/jinja_helpers/pretty_time.sql
+[0m22:15:02.709886 [debug] [MainThread]: Parsing macros/jinja_helpers/log_info.sql
+[0m22:15:02.710931 [debug] [MainThread]: Parsing macros/jinja_helpers/slugify.sql
+[0m22:15:02.712310 [debug] [MainThread]: Parsing macros/jinja_helpers/_is_ephemeral.sql
+[0m22:15:02.714062 [debug] [MainThread]: Parsing macros/sql/date_spine.sql
+[0m22:15:02.717851 [debug] [MainThread]: Parsing macros/sql/nullcheck_table.sql
+[0m22:15:02.719332 [debug] [MainThread]: Parsing macros/sql/get_relations_by_pattern.sql
+[0m22:15:02.722661 [debug] [MainThread]: Parsing macros/sql/generate_series.sql
+[0m22:15:02.726720 [debug] [MainThread]: Parsing macros/sql/get_relations_by_prefix.sql
+[0m22:15:02.729968 [debug] [MainThread]: Parsing macros/sql/get_tables_by_prefix_sql.sql
+[0m22:15:02.731517 [debug] [MainThread]: Parsing macros/sql/star.sql
+[0m22:15:02.737436 [debug] [MainThread]: Parsing macros/sql/unpivot.sql
+[0m22:15:02.743857 [debug] [MainThread]: Parsing macros/sql/safe_divide.sql
+[0m22:15:02.744947 [debug] [MainThread]: Parsing macros/sql/union.sql
+[0m22:15:02.757144 [debug] [MainThread]: Parsing macros/sql/groupby.sql
+[0m22:15:02.758400 [debug] [MainThread]: Parsing macros/sql/deduplicate.sql
+[0m22:15:02.762064 [debug] [MainThread]: Parsing macros/sql/surrogate_key.sql
+[0m22:15:02.763583 [debug] [MainThread]: Parsing macros/sql/safe_add.sql
+[0m22:15:02.766452 [debug] [MainThread]: Parsing macros/sql/nullcheck.sql
+[0m22:15:02.768438 [debug] [MainThread]: Parsing macros/sql/get_tables_by_pattern_sql.sql
+[0m22:15:02.775319 [debug] [MainThread]: Parsing macros/sql/get_column_values.sql
+[0m22:15:02.780625 [debug] [MainThread]: Parsing macros/sql/pivot.sql
+[0m22:15:02.784276 [debug] [MainThread]: Parsing macros/sql/get_filtered_columns_in_relation.sql
+[0m22:15:02.786871 [debug] [MainThread]: Parsing macros/sql/width_bucket.sql
+[0m22:15:02.791454 [debug] [MainThread]: Parsing macros/sql/get_query_results_as_dict.sql
+[0m22:15:02.794221 [debug] [MainThread]: Parsing macros/sql/generate_surrogate_key.sql
+[0m22:15:02.796766 [debug] [MainThread]: Parsing macros/sql/get_table_types_sql.sql
+[0m22:15:02.798618 [debug] [MainThread]: Parsing macros/sql/get_single_value.sql
+[0m22:15:02.802386 [debug] [MainThread]: Parsing macros/sql/haversine_distance.sql
+[0m22:15:02.808741 [debug] [MainThread]: Parsing macros/compare_relations.sql
+[0m22:15:02.810843 [debug] [MainThread]: Parsing macros/compare_all_columns.sql
+[0m22:15:02.815652 [debug] [MainThread]: Parsing macros/compare_column_values_verbose.sql
+[0m22:15:02.819512 [debug] [MainThread]: Parsing macros/compare_column_values.sql
+[0m22:15:02.826705 [debug] [MainThread]: Parsing macros/compare_queries.sql
+[0m22:15:02.829434 [debug] [MainThread]: Parsing macros/compare_relation_columns.sql
+[0m22:15:03.246283 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:15:03.256026 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:15:03.258310 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:15:03.261228 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:15:03.264002 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:15:03.267577 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:15:03.270181 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:15:03.272735 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:15:03.275047 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:15:03.277279 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:15:03.279570 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:15:03.281959 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:15:03.284162 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:15:03.286482 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:15:03.288744 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:15:03.291124 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:15:03.293735 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:15:03.296611 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:15:03.299445 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:15:03.302502 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:15:03.305039 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:15:03.307556 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:15:03.309886 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:15:03.312780 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:15:03.314999 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:15:03.317527 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:15:03.325534 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:15:03.327592 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:15:03.330468 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:15:03.334099 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:15:03.337393 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:15:03.340381 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:15:03.360388 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:15:03.361994 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:15:03.365118 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:15:03.381477 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:15:03.382976 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:15:03.385835 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:15:03.711563 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_update_timestamp' in the 'models' section of file 'models/marts/warehouse/schema.yml'
+[0m22:15:03.712440 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'dim_type_1_cols' in the 'models' section of file 'models/marts/warehouse/schema.yml'
+[0m22:15:03.767771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f1451f71-b9fd-4362-896d-f5af2ec649d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112eed0d0>]}
+[0m22:15:03.787675 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f1451f71-b9fd-4362-896d-f5af2ec649d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1126c9250>]}
+[0m22:15:03.788186 [info ] [MainThread]: Found 35 models, 22 tests, 2 snapshots, 0 analyses, 434 macros, 0 operations, 1 seed file, 25 sources, 0 exposures, 0 metrics
+[0m22:15:03.788518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f1451f71-b9fd-4362-896d-f5af2ec649d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d74700>]}
+[0m22:15:03.790853 [info ] [MainThread]: 
+[0m22:15:03.791581 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m22:15:03.792394 [debug] [ThreadPool]: Acquiring new snowflake connection "list_ANALYTICS_DEV"
+[0m22:15:03.807633 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV"
+[0m22:15:03.807897 [debug] [ThreadPool]: On list_ANALYTICS_DEV: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV"} */
+show terse schemas in database ANALYTICS_DEV
+    limit 10000
+[0m22:15:03.808064 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:05.627035 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.82 seconds
+[0m22:15:05.628819 [debug] [ThreadPool]: On list_ANALYTICS_DEV: Close
+[0m22:15:05.775829 [debug] [ThreadPool]: Acquiring new snowflake connection "list_ANALYTICS_snapshots"
+[0m22:15:05.776368 [debug] [ThreadPool]: Acquiring new snowflake connection "list_ANALYTICS_DEV_warehouse"
+[0m22:15:05.776869 [debug] [ThreadPool]: Acquiring new snowflake connection "list_ANALYTICS_DEV_sales"
+[0m22:15:05.777363 [debug] [ThreadPool]: Acquiring new snowflake connection "list_ANALYTICS_DEV_DBT_SBROWN"
+[0m22:15:05.789678 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_snapshots"
+[0m22:15:05.788544 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_warehouse"
+[0m22:15:05.792166 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_sales"
+[0m22:15:05.794474 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_DBT_SBROWN"
+[0m22:15:05.794688 [debug] [ThreadPool]: On list_ANALYTICS_snapshots: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "connection_name": "list_ANALYTICS_snapshots"} */
+show terse objects in ANALYTICS.snapshots
+[0m22:15:05.794867 [debug] [ThreadPool]: On list_ANALYTICS_DEV_warehouse: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_warehouse"} */
+show terse objects in ANALYTICS_DEV.warehouse
+[0m22:15:05.795057 [debug] [ThreadPool]: On list_ANALYTICS_DEV_sales: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_sales"} */
+show terse objects in ANALYTICS_DEV.sales
+[0m22:15:05.795262 [debug] [ThreadPool]: On list_ANALYTICS_DEV_DBT_SBROWN: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_DBT_SBROWN"} */
+show terse objects in ANALYTICS_DEV.DBT_SBROWN
+[0m22:15:05.795451 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:15:05.795647 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:05.795847 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:05.796025 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:15:08.600398 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.8 seconds
+[0m22:15:08.601242 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.81 seconds
+[0m22:15:08.603172 [debug] [ThreadPool]: On list_ANALYTICS_DEV_DBT_SBROWN: Close
+[0m22:15:08.604857 [debug] [ThreadPool]: On list_ANALYTICS_snapshots: Close
+[0m22:15:08.608533 [debug] [ThreadPool]: SQL status: SUCCESS 9 in 2.81 seconds
+[0m22:15:08.610871 [debug] [ThreadPool]: On list_ANALYTICS_DEV_warehouse: Close
+[0m22:15:08.974928 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 3.18 seconds
+[0m22:15:08.976251 [debug] [ThreadPool]: On list_ANALYTICS_DEV_sales: Close
+[0m22:15:09.171169 [debug] [ThreadPool]: Acquiring new snowflake connection "list_ANALYTICS_DEV_staging"
+[0m22:15:09.175542 [debug] [ThreadPool]: Using snowflake connection "list_ANALYTICS_DEV_staging"
+[0m22:15:09.175767 [debug] [ThreadPool]: On list_ANALYTICS_DEV_staging: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "connection_name": "list_ANALYTICS_DEV_staging"} */
+show terse objects in ANALYTICS_DEV.staging
+[0m22:15:09.175926 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:15:11.168691 [debug] [ThreadPool]: SQL status: SUCCESS 25 in 1.99 seconds
+[0m22:15:11.171538 [debug] [ThreadPool]: On list_ANALYTICS_DEV_staging: Close
+[0m22:15:11.702796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f1451f71-b9fd-4362-896d-f5af2ec649d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111a17e80>]}
+[0m22:15:11.703494 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m22:15:11.703806 [info ] [MainThread]: 
+[0m22:15:11.708500 [debug] [Thread-1  ]: Began running node model.cloud_transform_dbt.dim_products
+[0m22:15:11.708820 [info ] [Thread-1  ]: 1 of 1 START sql incremental model warehouse.dim_products ...................... [RUN]
+[0m22:15:11.709473 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:11.709658 [debug] [Thread-1  ]: Began compiling node model.cloud_transform_dbt.dim_products
+[0m22:15:11.709836 [debug] [Thread-1  ]: Compiling model.cloud_transform_dbt.dim_products
+[0m22:15:11.724637 [debug] [Thread-1  ]: Writing injected SQL for node "model.cloud_transform_dbt.dim_products"
+[0m22:15:11.725415 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:15:11.725611 [debug] [Thread-1  ]: Began executing node model.cloud_transform_dbt.dim_products
+[0m22:15:11.776916 [debug] [Thread-1  ]: Using snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:11.777175 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "node_id": "model.cloud_transform_dbt.dim_products"} */
+create or replace  view ANALYTICS_DEV.warehouse.dim_products__dbt_tmp
+  
+   as (
+    with v_product as
+(
+    select *,
+           
+    
+md5(cast(coalesce(cast(STANDARDCOST as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(LISTPRICE as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(MODIFIEDDATE as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as t1_key
+    from raw.production.product
+), v_this as
+(
+    select *,
+           
+    
+md5(cast(coalesce(cast(STANDARDCOST as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(LISTPRICE as TEXT), '_dbt_utils_surrogate_key_null_') || '-' || coalesce(cast(MODIFIEDDATE as TEXT), '_dbt_utils_surrogate_key_null_') as TEXT)) as t1_key
+    from ANALYTICS_DEV.warehouse.dim_products
+)
+
+select t2.product_key,t2.PRODUCTID as PRODUCTID,
+    t2.PRODUCTMODELID as PRODUCTMODELID,
+    t2.PRODUCTSUBCATEGORYID as PRODUCTSUBCATEGORYID,
+    t2.NAME as NAME,
+    
+    case when (d.dbt_valid_to is null  
+                        and d.t1_key != s.t1_key) then s.STANDARDCOST
+                when (d.product_key is not null) then d.STANDARDCOST
+                else t2.STANDARDCOST end as STANDARDCOST,
+    case when (d.dbt_valid_to is null  
+                        and d.t1_key != s.t1_key) then s.LISTPRICE
+                when (d.product_key is not null) then d.LISTPRICE
+                else t2.LISTPRICE end as LISTPRICE,
+    case when (d.dbt_valid_to is null  
+                        and d.t1_key != s.t1_key) then s.MODIFIEDDATE
+                when (d.product_key is not null) then d.MODIFIEDDATE
+                else t2.MODIFIEDDATE end as MODIFIEDDATE
+    ,
+    case when (t2.dbt_valid_to is null 
+                    and d.t1_key != s.t1_key) then convert_timezone('America/New_York',current_timestamp::timestamp)
+             when (d.product_key is not null) then d.dbt_updated_at
+             else convert_timezone('America/New_York',t2.dbt_updated_at::timestamp) end as dbt_updated_at
+,convert_timezone('America/New_York',t2.dbt_valid_from::timestamp) as dbt_valid_from,
+      convert_timezone('America/New_York',t2.dbt_valid_to::timestamp) as dbt_valid_to
+from ANALYTICS.snapshots.snap__product t2
+    left join v_product s
+        on t2.productid = s.productid
+    left join v_this d
+        on t2.product_key = d.product_key
+  );
+[0m22:15:11.777363 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+[0m22:15:13.587770 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.81 seconds
+[0m22:15:13.598419 [debug] [Thread-1  ]: Using snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:13.598655 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "node_id": "model.cloud_transform_dbt.dim_products"} */
+describe table ANALYTICS_DEV.warehouse.dim_products__dbt_tmp
+[0m22:15:13.662220 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.06 seconds
+[0m22:15:13.667737 [debug] [Thread-1  ]: Using snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:13.667966 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "node_id": "model.cloud_transform_dbt.dim_products"} */
+describe table ANALYTICS_DEV.warehouse.dim_products
+[0m22:15:13.846749 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.18 seconds
+[0m22:15:13.856287 [debug] [Thread-1  ]: Using snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:13.856546 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "node_id": "model.cloud_transform_dbt.dim_products"} */
+describe table "ANALYTICS_DEV"."WAREHOUSE"."DIM_PRODUCTS"
+[0m22:15:14.320370 [debug] [Thread-1  ]: SQL status: SUCCESS 11 in 0.46 seconds
+[0m22:15:14.354894 [debug] [Thread-1  ]: Writing runtime sql for node "model.cloud_transform_dbt.dim_products"
+[0m22:15:14.356790 [debug] [Thread-1  ]: Using snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:14.356968 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "node_id": "model.cloud_transform_dbt.dim_products"} */
+BEGIN
+[0m22:15:14.533094 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.18 seconds
+[0m22:15:14.533585 [debug] [Thread-1  ]: Using snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:14.533833 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "node_id": "model.cloud_transform_dbt.dim_products"} */
+merge into ANALYTICS_DEV.warehouse.dim_products as DBT_INTERNAL_DEST
+        using ANALYTICS_DEV.warehouse.dim_products__dbt_tmp as DBT_INTERNAL_SOURCE
+        on 
+                DBT_INTERNAL_SOURCE.PRODUCT_KEY = DBT_INTERNAL_DEST.PRODUCT_KEY
+            
+
+    
+    when matched then update set
+        "PRODUCT_KEY" = DBT_INTERNAL_SOURCE."PRODUCT_KEY","PRODUCTID" = DBT_INTERNAL_SOURCE."PRODUCTID","PRODUCTMODELID" = DBT_INTERNAL_SOURCE."PRODUCTMODELID","PRODUCTSUBCATEGORYID" = DBT_INTERNAL_SOURCE."PRODUCTSUBCATEGORYID","NAME" = DBT_INTERNAL_SOURCE."NAME","STANDARDCOST" = DBT_INTERNAL_SOURCE."STANDARDCOST","LISTPRICE" = DBT_INTERNAL_SOURCE."LISTPRICE","MODIFIEDDATE" = DBT_INTERNAL_SOURCE."MODIFIEDDATE","DBT_UPDATED_AT" = DBT_INTERNAL_SOURCE."DBT_UPDATED_AT","DBT_VALID_FROM" = DBT_INTERNAL_SOURCE."DBT_VALID_FROM","DBT_VALID_TO" = DBT_INTERNAL_SOURCE."DBT_VALID_TO"
+    
+
+    when not matched then insert
+        ("PRODUCT_KEY", "PRODUCTID", "PRODUCTMODELID", "PRODUCTSUBCATEGORYID", "NAME", "STANDARDCOST", "LISTPRICE", "MODIFIEDDATE", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO")
+    values
+        ("PRODUCT_KEY", "PRODUCTID", "PRODUCTMODELID", "PRODUCTSUBCATEGORYID", "NAME", "STANDARDCOST", "LISTPRICE", "MODIFIEDDATE", "DBT_UPDATED_AT", "DBT_VALID_FROM", "DBT_VALID_TO")
+
+;
+[0m22:15:17.796234 [debug] [Thread-1  ]: SQL status: SUCCESS 601 in 3.26 seconds
+[0m22:15:17.796694 [debug] [Thread-1  ]: Using snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:17.796931 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "node_id": "model.cloud_transform_dbt.dim_products"} */
+COMMIT
+[0m22:15:18.358984 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.56 seconds
+[0m22:15:18.367422 [debug] [Thread-1  ]: Using snowflake connection "model.cloud_transform_dbt.dim_products"
+[0m22:15:18.367703 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: /* {"app": "dbt", "dbt_version": "1.3.0", "profile_name": "cloud_transform_dbt", "target_name": "dev", "node_id": "model.cloud_transform_dbt.dim_products"} */
+drop view if exists ANALYTICS_DEV.warehouse.dim_products__dbt_tmp cascade
+[0m22:15:18.787231 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 0.42 seconds
+[0m22:15:18.810836 [debug] [Thread-1  ]: finished collecting timing info
+[0m22:15:18.811114 [debug] [Thread-1  ]: On model.cloud_transform_dbt.dim_products: Close
+[0m22:15:19.810963 [debug] [Thread-1  ]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'f1451f71-b9fd-4362-896d-f5af2ec649d0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ca85e0>]}
+[0m22:15:19.811446 [info ] [Thread-1  ]: 1 of 1 OK created sql incremental model warehouse.dim_products ................. [[32mSUCCESS 601[0m in 8.10s]
+[0m22:15:19.811948 [debug] [Thread-1  ]: Finished running node model.cloud_transform_dbt.dim_products
+[0m22:15:19.813785 [debug] [MainThread]: Acquiring new snowflake connection "master"
+[0m22:15:19.814319 [info ] [MainThread]: 
+[0m22:15:19.814617 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 16.02 seconds (16.02s).
+[0m22:15:19.814893 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:15:19.815048 [debug] [MainThread]: Connection 'model.cloud_transform_dbt.dim_products' was properly closed.
+[0m22:15:19.815219 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_warehouse' was properly closed.
+[0m22:15:19.815415 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_sales' was properly closed.
+[0m22:15:19.815572 [debug] [MainThread]: Connection 'list_ANALYTICS_DEV_DBT_SBROWN' was properly closed.
+[0m22:15:19.832865 [info ] [MainThread]: 
+[0m22:15:19.833214 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:15:19.833513 [info ] [MainThread]: 
+[0m22:15:19.833766 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m22:15:19.834095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ba81c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e4ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ca8a30>]}
+[0m22:15:19.834358 [debug] [MainThread]: Flushing usage events

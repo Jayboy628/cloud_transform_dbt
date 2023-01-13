@@ -107,7 +107,7 @@ favorite_bikes as
     , case when store_id is not null then cr2.name else cr.name end as Country
     , case when store_id is not null then a2.postal_code else a.postal_code end as postal_code
     , s.name as retailer_name
-    ,f.Bicycle_Name is not null as is_favorite_bicycle
+    , f.Bicycle_Name is not null as is_favorite_bicycle
 from customer c 
     left outer join person p on p.business_entity_id = c.person_id
     left outer join email_address ea on ea.business_entity_id = p.business_entity_id
