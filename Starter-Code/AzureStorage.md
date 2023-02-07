@@ -1,7 +1,15 @@
 # Configuring Secure Access to Cloud Storage
 
-## Step 1: Create a Cloud Storage Integration in Snowflake
+#### Step 1: Create a Cloud Storage Integration in Snowflake
+Make
 USE DATABASE RAW;
+<table>
+<tr> 
+    <th><h5>CREATE DATA WAREHOUSE (SQL)</h5></th>
+</tr>
+<tr>
+<td>  
+<pre lang="js">
 <details open>
 <summary><h5>create integration object that contains the access information</h5></summary>
 
@@ -12,6 +20,10 @@ CREATE STORAGE INTEGRATION azure_integration
   AZURE_TENANT_ID = '0736f241-6f0c-4d37-b74c-dec3495633bd'
   STORAGE_ALLOWED_LOCATIONS = ('azure://stgproject.blob.core.windows.net/dbt-lt-data');
 </details>
+</pre>
+</td>
+</tr>
+</table>
 
 ##### Step 2: Grant Snowflake Access to the Storage Locations
 -- Describe integration object to provide access
