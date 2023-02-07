@@ -62,12 +62,11 @@ If you want an adrenaline rush from a process that used to take dbt newcomers `1
 
 
 ## Running this project
+
 ***
-
+### Step-by-step explanation
 <details>
-<summary>GitHub Codespaces / Dev Containers </summary>
-
-#### Steps
+<summary>Create Snowflake and Storage Environment </summary>
 
 #### Azure: Create Storage using CLI 
 
