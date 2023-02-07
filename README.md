@@ -90,12 +90,23 @@ dbt docs serve
 <summary>GitHub Codespaces / Dev Containers </summary>
 
 #### Steps
-a. Create a Snowflake accoumt
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Level 1 SQL Code.
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Level 1 SQL Code.
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Level 1 SQL Code.
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Level 1 SQL Code.
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Level 1 SQL Code.
+
+#### Azure: Create Storage using CLI 
+
+* [`Snowflake.md`](Starter-Code/Snowflake.md) -- Step 1 CLI Code.
+    
+#### Snowflake: Create Data warehosue
+    
+* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Step 2  SQL Code.
+    
+#### Integrate: Create stage integration for azure and snowflake 
+    
+* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Step 3 SQL Code.
+    
+#### Data Load: Load CSV and JSON files    
+* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Step 4  SQL Code.
+    
+
 
 1. Ensure you have [Codespaces](https://github.com/features/codespaces) enabled for your GitHub organization or turned on as a beta feature if you're an individual user
 2. Click the green **Code** button on near the top right of the page of this repo's homepage (you may already be on it)
