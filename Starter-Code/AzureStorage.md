@@ -1,17 +1,15 @@
 # Configuring Secure Access to Cloud Storage
 
 #### Step 1: Create a Cloud Storage Integration in Snowflake
-Make
-USE DATABASE RAW;
+<details open>
 <table>
 <tr> 
-    <th><h5>CREATE DATA WAREHOUSE (SQL)</h5></th>
+    <th><h5>create integration object that contains the access information (SQL)</h5></th>
 </tr>
 <tr>
 <td>  
 <pre lang="js">
-<details open>
-<summary><h5>create integration object that contains the access information</h5></summary>
+USE DATABASE RAW;
 
 CREATE STORAGE INTEGRATION azure_integration
   TYPE = EXTERNAL_STAGE
@@ -24,9 +22,11 @@ CREATE STORAGE INTEGRATION azure_integration
 </td>
 </tr>
 </table>
+</details>
 
 ##### Step 2: Grant Snowflake Access to the Storage Locations
--- Describe integration object to provide access
+
+- Describe integration object to provide access
     - DESC STORAGE integration azure_integration;
 
 # Configuring Automation With Azure Event Grid
