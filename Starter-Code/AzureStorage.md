@@ -1,10 +1,10 @@
 # Configuring Secure Access to Cloud Storage
 
-#### Step 1: Create a Cloud Storage Integration in Snowflake
 <details open>
+<summary><h5>create integration object that contains the access information</h5></summary>
 <table>
 <tr> 
-    <th><h5>create integration object that contains the access information (SQL)</h5></th>
+    <th><h5>Step 1: Create a Cloud Storage Integration in Snowflake (SQL)</h5></th>
 </tr>
 <tr>
 <td>  
@@ -17,7 +17,6 @@ CREATE STORAGE INTEGRATION azure_integration
   ENABLED = TRUE
   AZURE_TENANT_ID = '0736f241-6f0c-4d37-b74c-dec3495633bd'
   STORAGE_ALLOWED_LOCATIONS = ('azure://stgproject.blob.core.windows.net/dbt-lt-data');
-</details>
 </pre>
 </td>
 </tr>
@@ -27,32 +26,48 @@ CREATE STORAGE INTEGRATION azure_integration
 ##### Step 2: Grant Snowflake Access to the Storage Locations
 
 - Describe integration object to provide access
-    - DESC STORAGE integration azure_integration;
+    - `DESC STORAGE integration` azure_integration;
 
 # Configuring Automation With Azure Event Grid
-
-##### Step 1: Configuring the Event Grid Subscription
-
-<bold> Create resurce group</bold>
-    - az group create --name rg-snowflake-proj --location eastus
-
-<bold> Create a GPv2 account</bold>
-    - az storage account create --resource-group rg-snowflake-proj --name stgsnowpipetl --sku Standard_RAGRS --location eastus  --kind StorageV2
-
-<bold> Create file system</bold>
-    - az storage fs create -n dbt-pipe-data --account-name stgsnowpipetl
-
-<bold> Create a Storage Queue</bold>
-    - az storage queue create --name dbt-pipe-queue --account-name stgsnowpipetl 
+***
+<details open>
+<summary><h5>create integration object that contains the access information</h5></summary>
+<table>
+<tr> 
+    <th><h5>Step 1: Create a Cloud Storage Integration in Snowflake (SQL)</h5></th>
+</tr>
+<tr>
+<td>  
+<pre lang="js">
+<summary><h5>Step 3: Configuring the Event Grid Subscription</h5></summary>
+* Create resurce group: `az group create --name rg-snowflake-proj --location eastus`
+* Create a GPv2 account: `az storage account create --resource-group rg-snowflake-proj --name stgsnowpipetl --sku Standard_RAGRS --location eastus  --kind StorageV2`
+* Create file system: `az storage fs create -n dbt-pipe-data --account-name stgsnowpipetl`
+* Create a Storage Queue: `az storage queue create --name dbt-pipe-queue --account-name stgsnowpipetl`
+</pre>
+</td>
+</tr>
+</table>
+</details>
 
 <details open>
 <summary><h5>create integration object that contains the access information</h5></summary>
-
+<table>
+<tr> 
+    <th><h5>Step 1: Create a Cloud Storage Integration in Snowflake (SQL)</h5></th>
+</tr>
+<tr>
+<td>  
+<pre lang="js">
 * Storage Notification Queue: `https://stgsnowpipetl.queue.core.windows.net/dbt-pipe-queue`
 * Azure active directory ID: `0736f241-6f0c-4d37-b74c-dec3495633bd`
 * snowflake application name: `bksnowflakepacints`
 * Primary Azure Blob Storage endpoint/url:`https://stgsnowpipetl.blob.core.windows.net/`
 * Blob service Shared Access Signature:
+</pre>
+</td>
+</tr>
+</table>
 </details>
 ***
 
