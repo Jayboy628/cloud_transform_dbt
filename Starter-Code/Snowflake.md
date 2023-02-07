@@ -2,9 +2,15 @@
 
 #### CREATE DATA WAREHOUSE (SQL)
 
-USE ROLE ACCOUNTADMIN;
-
-`CREATE WAREHOUSE TRANSFORM_WH 
+<table>
+<tr> 
+    <th>Create data warehouse for project</th>
+</tr>
+<tr>
+<td>  
+<pre lang="js">
+`USE ROLE ACCOUNTADMIN;`
+CREATE WAREHOUSE TRANSFORM_WH 
     WITH WAREHOUSE_SIZE = 'XSMALL'
     WAREHOUSE_TYPE = 'STANDARD' 
     AUTO_SUSPEND = 300 
@@ -12,7 +18,12 @@ USE ROLE ACCOUNTADMIN;
     MIN_CLUSTER_COUNT = 1 
     MAX_CLUSTER_COUNT = 1 
     SCALING_POLICY = 'STANDARD'
-    COMMENT = 'This is Data warehouse is for world wide basicle store';`
+    COMMENT = 'This is Data warehouse is for world wide basicle store';
+</pre>
+</td>
+</tr>
+</table>
+
 
 ### CREATE ROLE for Data Engineer
 
