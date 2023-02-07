@@ -31,11 +31,13 @@
 - Difficulty making comparisons and spotting trends over time  
 - Unable to respond quickly to sales trends or to changing customer behaviors 
 - No Single Source of Truth (SSOT)
+
 </details>  
 
 <details>
 <summary>
-## High Level Solution: Data Architecture
+
+ ## High Level Solution: Data Architecture
 </summary>    
 
 - Design and develop data warehouse to support sales and marketing 
@@ -58,20 +60,38 @@ If you want an adrenaline rush from a process that used to take dbt newcomers `1
 
 [Verified GitHub Action on dbt Performance](https://github.com/dbt-labs/jaffle_shop_duckdb/runs/7141529753?check_suite_focus=true#step:4:306)
 
+
 ## Running this project
 ***
-* Prerequisities: Python >= 3.5
 
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Level 1 SQL Code.
+<details>
+<summary>GitHub Codespaces / Dev Containers </summary>
 
-### Mach Speed: No explanation needed
+#### Steps
 
+#### Azure: Create Storage using CLI 
+
+* [`Snowflake.md`](Starter-Code/Snowflake.md) -- Step 1 CLI Code.
+    
+#### Snowflake: Create Data warehosue
+    
+* [`AzureStorage.md`](Starter-Code/AzureStorage.md) -- Step 2  SQL Code.
+    
+#### Integrate: Create stage integration for azure and snowflake 
+    
+* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Step 3 SQL Code.
+    
+#### Data Load: Load CSV and JSON files    
+* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Step 4  SQL Code.
+
+</details>
 > Run `dbt` as fast as possible in a single copy and paste motion!
 
 <details open>
-<summary>Mac Pro</summary>
+<summary>GitHub Codespaces / Dev Containers</summary>
 
 ```shell
+Prerequisities: Python >= 3.5
 git clone https://github.com/Jayboy628/cloud-snowflake-dbt.git
 cd cloud-snowflake-dbt
 python3 -m venv venv
@@ -86,27 +106,8 @@ dbt docs serve
 ```
 </details>
 
-<details>
-<summary>GitHub Codespaces / Dev Containers </summary>
-
-#### Steps
-
-#### Azure: Create Storage using CLI 
-
-* [`Snowflake.md`](Starter-Code/Snowflake.md) -- Step 1 CLI Code.
-    
-#### Snowflake: Create Data warehosue
-    
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Step 2  SQL Code.
-    
-#### Integrate: Create stage integration for azure and snowflake 
-    
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Step 3 SQL Code.
-    
-#### Data Load: Load CSV and JSON files    
-* [`Snowflake.md`](Starter-Code/Snowflake.sql) -- Step 4  SQL Code.
-    
-
+<details open>
+<summary>GitHub Codespaces / Dev Containers</summary>
 
 1. Ensure you have [Codespaces](https://github.com/features/codespaces) enabled for your GitHub organization or turned on as a beta feature if you're an individual user
 2. Click the green **Code** button on near the top right of the page of this repo's homepage (you may already be on it)
@@ -155,7 +156,16 @@ There's some bells and whistles defined in the [.devcontainer.json]().devcontain
 
 
 </details>
+<details>
+<summary>GitHub Codespaces / Dev Containers </summary>
 
+#### Steps
+
+#### Azure: Create Storage using CLI 
+
+* [`sf_connect_fact_sales.md`](Starter-Code/sf_connect_fact_sales.md) -- Step 1 python Code.
+
+</details>    
 ### Step-by-step explanation
 
 To get up and running with this project:
