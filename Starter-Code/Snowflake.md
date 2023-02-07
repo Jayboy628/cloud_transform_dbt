@@ -50,11 +50,13 @@ GRANT ROLE TRANSFORM_ROLE TO USER TRANSFORM_USER;
 </tr>
 </table>
 
-#### CREATE DATABASES (SQL)
 
+<details>
+    <summary><h5>CREATE DATABASES (SQL)</h5> </summary>
 `CREATE DATABASE RAW;`
 `CREATE DATABASE ANALYTICS_DEV;`
 `CREATE DATABASE ANALYTICS;`
+</details>
 
 <details>
     <summary><h5>MODFIY DATABASE PRIV (SQL)</h5> </summary>
@@ -84,9 +86,6 @@ GRANT ROLE TRANSFORM_ROLE TO USER TRANSFORM_USER;
 
 </details>
 
-#### CREATE SCHEMA (SQL)
-
-* USE ROLE TRANSFORM_ROLE;
 
 <details>
     <summary><h5>CREATE SCHEMA (SQL)</h5> </summary>
@@ -96,8 +95,9 @@ GRANT ROLE TRANSFORM_ROLE TO USER TRANSFORM_USER;
 * `CREATE SCHEMA` RAW.Sales;
 </details>
 
-#### CREATE TABLE (SQL)
 
+<details>
+    <summary><h5>CREATE TABLE (SQL)</h5> </summary>
 <table>
 <tr> 
     <th><h5>CREATE TABLE Production.Product (SQL)</h5></th>
@@ -134,7 +134,7 @@ ModifiedDate datetime NOT NULL)
 </td>
 </tr>
 </table>
-************
+
 <table>
 <tr> 
     <th><h5>CREATE TABLE Sales.Customer (SQL)</h5></th>
@@ -152,5 +152,5 @@ ModifiedDate datetime NOT NULL
 </td>
 </tr>
 </table>
-
+</details>
 
