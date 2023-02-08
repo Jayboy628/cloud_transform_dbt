@@ -94,23 +94,32 @@
 ***
 
 <details open>
-<summary>Environment </summary>
+<summary>Project Environment </summary>
+
+#### Installation requriments
+
+* Install a code editor, Python and GIT
+* Create accounts on Github and Snowflake
+* Create a new repository on GitHub and Snowflake
+* Setup a Snowflake Environment
+* Download & Installled dbt CLI
+* Initialized a new dbt project
     
-#### Azure: Create Storage 
+#### Azure: Create Storage (Setup a Snowflake Environment)
     
 * [`AzureStorage.md`](Starter-Code/AzureStorage.md) -- Step 1  CLI Code.
 
-#### Snowflake: Create Data Warehouse 
+#### Snowflake: Create Data Warehouse (Setup a Snowflake Environment)
 
 * [`Snowflake.md`](Starter-Code/Snowflake.md) -- Step 1 CLI Code.
 
     
-#### Integrate: Create stage integration for azure and snowflake 
+#### Integrate: Create stage integration for azure and snowflake (Setup a Snowflake Environment)
     
 * [`Snowflake.md`](Starter-Code/Integration.sql) -- Step 3 SQL Code.
 
     
-#### Data Load: Load CSV and JSON files    
+#### Data Load: Load CSV and JSON files  (Setup a Snowflake Environment)
 * [`Snowflake.md`](Starter-Code/Load.sql) -- Step 4  SQL Code.
 
 </details>
@@ -119,7 +128,7 @@
 <summary>GitHub Codespaces </summary>
 
 ```shell
-Check python version: Python >= 3.5
+- Check python version: Python >= 3.5
 git clone https://github.com/Jayboy628/cloud-snowflake-dbt.git
 cd cloud-snowflake-dbt
 python3 -m venv venv
@@ -132,14 +141,13 @@ dbt build
 dbt docs generate
 dbt docs serve_
 ```
-![header](images/logo.png)
 
 </details>
 
 <!-- GETTING STARTED -->
 ## We're all set up... What's the plan? 
 ***
-![header](images/logo.png)
+![header](images/WhatsPlan.png)
 * `Transform` raw source data into structure data models on `Snowflake` using `dbt`.
 * Save a `version-controlled` project on `GitHub`
 * Modelling `SCD1` and `SCD2` Dimensions with dbt
