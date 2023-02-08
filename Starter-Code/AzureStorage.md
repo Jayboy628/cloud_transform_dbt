@@ -1,86 +1,41 @@
-# Custom events to Azure Queue storage via Event Grid using Azure CLI
 
-***
-<details open>
-<summary><h5>Step 2: Configuring Automation With Azure Event Grid</h5></summary>
-<table>
-<tr> 
-    <th><h5>Setup Event Grid (CLI)</h5></th>
-</tr>
-<tr>
-<td>  
-<pre lang="js">
-* Create resurce group: `az group create --name rg-snowflake-proj --location eastus`
-* Enable the Event Grid resource provider: az provider register --namespace Microsoft.EventGrid
-* Create a GPv2 account: `az storage account create --resource-group rg-snowflake-proj --name stgsnowpipetl --sku Standard_RAGRS --location eastus  --kind StorageV2`
-* Create file system: `az storage fs create -n dbt-pipe-data --account-name stgsnowpipetl`
-* Create a Storage Queue: `az storage queue create --name dbt-pipe-queue --account-name stgsnowpipetl`
-</pre>
-</td>
-</tr>
-</table>
-</details>
-
-<table>
-<tr> 
-    <th><h5>Create a custom topic</h5></th>
-</tr>
-<tr>
-<td>  
-<pre lang="js">
-    - topicname="snowpipe"
-        - az eventgrid topic create --name $topicname -l eastus -g rg-snow-project
-</pre>
-</td>
-</tr>
-</table>
-</details>
-  
-***
-<table>
-<tr> 
-    <th><h5>Create Queue storage</h5></th>
-</tr>
-<tr>
-<td>  
-<pre lang="js">
-- storagename="stgsnowpipetl"
-- queuename="dbt-pipe-queue"
-* az storage account create -n $storagename -g rg-snow-project -l eastus --sku Standard_LRS
-* key="$(az storage account keys list -n $storagename --query "[0].{value:value}" --output tsv)"    
-* az storage queue create --name $queuename --account-name $storagename --account-key $key
-</pre>
-</td>
-</tr>
-</table>
-</details>
+# Create ADLS Storage Account CLI
 ***
 
-<table>
-<tr> 
-    <th><h5>Subscribe to a custom topic</h5></th>
-</tr>
-<tr>
-<td>  
-<pre lang="js">
+#### List of resource group
+> --az group list --query '[*].name'
+#### List of storage account
+> --az storage account list --query '[*].name'
+#### Create Storage Group (name is projectstg)
+ az storage account create -n projectstg -g project_databricksrg -l eastus --sku Standard_LRS
+ 
+ az storage account create -n stgbricksproj -g rg-databricks-proj -l eastus --sku Standard_LRS
+#### List of storage account using the resouce Group
+az storage account list --query '[*].name' -g project_databricksrg
 
-* storageid=$(az storage account show --name $storagename --resource-group rg-snowflake-proj --query id --output tsv)
-* queueid="$storageid/queueservices/default/queues/$queuename"
-* topicid=$(az eventgrid topic show --name $topicname -g rg-snowflake-proj --query id --output tsv)
+### Assign IAM ROLE on Storage Account to Azure AD
 
-`az eventgrid event-subscription create \
-  --source-resource-id $topicid \
-  --name mystoragequeuesubscription \
-  --endpoint-type storagequeue \
-  --endpoint $queueid \
-  --expiration-date "2023-02-05"`
-</pre>
-</td>
-</tr>
-</table>
-</details>
+1) Go to storage account or search for it and click on it
+2) Go to access ccontrol (IAM)
+3) Click on Add Role Assignment and search for Storage Blob Contributor
+4) Select members and search for the application that was created
 
-##### Send an event to your custom topic
-    - endpoint=$(az eventgrid topic show --name $topicname -g rg-snow-project --query "endpoint" --output tsv)
-    - key=$(az eventgrid topic key list --name $topicname -g rg-snow-project --query "key1" --output tsv)
-
+### Create ADLS Container or File System and Upload Data using CLU
+1) Search for a list of storage account - example below
+    - az storage account list --query '[*].name'
+2) Search for the select storage account reference the Resource Group - example below
+    - az storage account list --query '[*].name' -g project_databricksrg
+        [
+          "projectstg"
+        ]
+3) Create the file system or container by 
+    a. Name the Container and Assign the appropriate Storage Account - example below
+     - az storage fs create -n projectdata --account-name projectstg
+    b. list the file system(container)by refering the storage account
+    - az storage fs list --account-name projectstg
+4) Upload the file to the container or file system
+    - az storage fs directory upload -f projectdata --account-name projectstg -s "/Users/shaunjaybrown/projects/repo/retail_db" --recursive
+5) Confirm the folders were loaded
+   - az storage fs directory list -f projectdata --account-name  projectstg
+6) Confirm the files were loade
+   - az storage fs file list -f projectdata --account-name  projectstg
