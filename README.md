@@ -37,7 +37,7 @@
 <details open>
 <summary>
 
- #####n The dbt Viewpoint: Our Approach 
+ ##### The dbt Viewpoint: Our Approach 
  <bold>less robust faster result and limitedless functionality Easier than SSIS...Modern Approach</bold>
 </summary>    
 <table>
@@ -47,7 +47,7 @@
 <tr>
 <td>  
 <pre lang="js">
-    * `Version Control:` Code evolves and you should always know what changed, when.
+    *  Version Control: Code evolves and you should always know what changed, when.
     * `Quality Assurance:` Any code that generates code for analysis should be reviewed and tested.
     * `Documentation:` Package your code with descriptions for how it should be interpreted.
     * `Modularity:` Create data sets that are consistent and can be easily updated as logic changes.
