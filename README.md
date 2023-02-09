@@ -106,21 +106,18 @@
 * Download & Installled dbt CLI
 * Initialized a new dbt project
     
-#### Azure: Create Storage (Setup a Snowflake Environment)
-    
+#### Azure: Create Storage  <span style="color:blue">some *(Setup a Snowflake Environment).* text</span>   
 * [`AzureStorage.md`](Starter-Code/AzureStorage.md) -- Step 1  CLI Code.
 
-#### Snowflake: Create Data Warehouse (Setup a Snowflake Environment)
-
+#### Snowflake: Create Data Warehouse <span style="color:blue">some *(Setup a Snowflake Environment).* text</span>
 * [`Snowflake.md`](Starter-Code/Snowflake.md) -- Step 2 SQL Code.
 
     
-#### Integrate: Create stage integration for azure and snowflake (Setup a Snowflake Environment)
-    
+#### Integrate: Create stage integration for azure and snowflake <span style="color:blue">some *(Setup a Snowflake Environment).* text</span>  
 * [`Integration.md`](Starter-Code/Integration.md) -- Step 3 SQL Code.
 
     
-#### Data Load: Load CSV and JSON files  (Setup a Snowflake Environment)
+#### Data Load: Load CSV and JSON files  <span style="color:blue">some *(Setup a Snowflake Environment).* text</span>
 * [`Load.md`](Starter-Code/Load.md) -- Step 4  SQL Code.
 
 
@@ -134,7 +131,7 @@
 * Change to the clone directory: `cd cloud-snowflake-dbt`
 * Upgrade pip   `python3 -m pip install --upgrade pip`
 * Download & Installled dbt CLI: `pip install dbt-snowflake`
-* Initialized a new dbt project: `dbt init dbt_project`
+* <span style="color:blue">some *Initialized a new dbt project:.* text</span> `dbt init dbt_project`
 
 dbt build
 dbt docs generate
