@@ -100,7 +100,7 @@
 
 #### Installation Requriments
 
-* Install Visual Studio Code editor, Extension Python and GIT
+* Install [Visual Studio](https://code.visualstudio.com/docs/python/python-tutorial) Code editor, Extension Python and [GIT](https://code.visualstudio.com/docs/sourcecontrol/overview)
 * Create accounts for [Snowflake](https://github.com/Snowflake-Labs/sfquickstarts) and new repository on [Github](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)
 * Setup a Snowflake Environment
 * Download & Installled dbt CLI
@@ -127,15 +127,15 @@
 #### GITHUB 
 <bold>Recommend to use the Visual Studio Terminal to following below steps</bold>
 
-- Check python version: Python >= 3.5
-git clone https://github.com/Jayboy628/cloud-snowflake-dbt.git
-cd cloud-snowflake-dbt
-python3 -m venv venv
-source venv/bin/activate
-python3 -m pip install --upgrade pip
-pip install dbt-snowflake
-python3 -m pip install -r requirements.txt
-source venv/bin/activate
+* Check python version: Python >= 3.5  `python -V`
+* Create working Environment: `python3 -m venv venv`
+* Change to working environment `source venv/bin/activate`
+* Clone github repisprty in terminal: `git clone https://github.com/Jayboy628/cloud-snowflake-dbt.git`
+* Change to the clone directory: `cd cloud-snowflake-dbt`
+* Upgrade pip   `python3 -m pip install --upgrade pip`
+* Download & Installled dbt CLI: `pip install dbt-snowflake`
+* Initialized a new dbt project: `dbt init dbt_project`
+
 dbt build
 dbt docs generate
 
@@ -143,7 +143,7 @@ dbt docs generate
 </details>
 
 <!-- GETTING STARTED -->
-## We're all set up... What's the plan? 
+## We're all set up... Demo 
 ***
 ![header](images/WhatsPlan.png)
 * `Transform` raw source data into structure data models on `Snowflake` using `dbt`.
@@ -151,5 +151,7 @@ dbt docs generate
 * Modelling `SCD1` and `SCD2` Dimensions with dbt
 * Model Star Schema: `Facts` and `Dimension`
 * Automate `Testing` and `Deploying` using GitHub Actions
-* Create a schedule for running dbt models using a `Cron job`
+***
+### Create a schedule for running dbt models using a `Cron job`
+![header](images/GithubFeatures.png)
 
