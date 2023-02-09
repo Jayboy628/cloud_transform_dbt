@@ -132,15 +132,16 @@
 * Upgrade pip   `python3 -m pip install --upgrade pip`
 * Download & Installled dbt CLI: `pip install dbt-snowflake`
 * Initialized a new dbt project: `dbt init dbt_project`
+
 ![header](images/Setupenv.png)
 
-#### Then run `dbt debug`
+* Then run `dbt debug`
 ![header](images/debugconnection.png)
 
 </details>
 
 <!-- GETTING STARTED -->
-## We're all set up... Demo 
+## We're all set up... Demo Time! 
 ***
 ![header](images/WhatsPlan.png)
 * `Transform` raw source data into structure data models on `Snowflake` using `dbt`.
