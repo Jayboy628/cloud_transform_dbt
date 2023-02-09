@@ -9,7 +9,7 @@
 <details open>
 <summary>
     
-##### Questions: Business Intelligence
+#### Questions: Business Intelligence
     
 </summary>
         
@@ -24,7 +24,7 @@
 <details open>
 <summary>
     
-##### Reasons: Business Intelligence 
+#### Reasons: Business Intelligence 
 </summary>
     
 - No consistency in pulling data from transaction system 
@@ -37,9 +37,10 @@
 <details open>
 <summary>
 
- ### The dbt Viewpoint: Our Approach 
+ ### The dbt Viewpoint: Our Approach gets the job done quickly!
  ![header](images/BriefHistory.png)
- <bold>less robust faster result and limitedless functionality Easier than SSIS...Modern Approach</bold>
+ <bold>I have used SSIS extensively and recently dive into DBT and from my experience SSIS is a far more robust tool. However, There's no drag and drop, right click properties, configure this, configure that, etc etc in dbt. It's all code (models). More importantly dbt works damn well with Snowflake (Snowflake carries heavy lifting and cost) so I have no complaints… Management doesn't really care how complex (Truly depends on the industry) your code is, they just need that report yesterday and dbt gets the job done quickly!
+</bold>
 </summary>    
 <table>
 <tr> 
@@ -98,7 +99,7 @@
 
 #### Installation requriments
 
-* Install a code editor, Python and GIT
+* Install Visual Studio Code editor, Extension Python and GIT
 * Create accounts on Github and Snowflake
 * Create a new repository on GitHub and Snowflake
 * Setup a Snowflake Environment
@@ -122,11 +123,9 @@
 #### Data Load: Load CSV and JSON files  (Setup a Snowflake Environment)
 * [`Snowflake.md`](Starter-Code/Load.sql) -- Step 4  SQL Code.
 
-</details>
 
-<details open>
-<summary>GitHub Codespaces </summary>
-
+#### GITHUB 
+<bold>Recommend to use the Visual Studio Terminal to following below steps</bold>
 ```shell
 - Check python version: Python >= 3.5
 git clone https://github.com/Jayboy628/cloud-snowflake-dbt.git
