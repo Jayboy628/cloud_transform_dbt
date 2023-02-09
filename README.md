@@ -132,10 +132,10 @@
 * Upgrade pip   `python3 -m pip install --upgrade pip`
 * Download & Installled dbt CLI: `pip install dbt-snowflake`
 * Initialized a new dbt project: `dbt init dbt_project`
+![header](images/Setupenv.png)
 
-dbt build
-dbt docs generate
-
+#### Then run `dbt debug`
+![header](images/debugconnection.png)
 
 </details>
 
