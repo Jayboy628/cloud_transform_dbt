@@ -151,7 +151,8 @@ dbt docs generate
 * Modelling `SCD1` and `SCD2` Dimensions with dbt
 * Model Star Schema: `Facts` and `Dimension`
 * Automate `Testing` and `Deploying` using GitHub Actions
+* Create a schedule for running dbt models using a `Cron job`
 ***
-### Create a schedule for running dbt models using a `Cron job`
+### Diagram of our CI`Cron job` Approach
 ![header](images/GithubFeatures.png)
 
