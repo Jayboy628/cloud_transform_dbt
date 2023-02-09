@@ -106,10 +106,12 @@
 * Download & Installled dbt CLI
 * Initialized a new dbt project
     
-#### Azure: Create Storage  <span style="color:blue">some *(Setup a Snowflake Environment).* text</span>   
+#### Azure: Create Storage  
+<span style="color:blue">*(Setup a Snowflake Environment)*</span>   
 * [`AzureStorage.md`](Starter-Code/AzureStorage.md) -- Step 1  CLI Code.
 
-#### Snowflake: Create Data Warehouse <span style="color:blue">some *(Setup a Snowflake Environment).* text</span>
+#### Snowflake: Create Data Warehouse 
+<span style="color:blue">*(Setup a Snowflake Environment)* </span>
 * [`Snowflake.md`](Starter-Code/Snowflake.md) -- Step 2 SQL Code.
 
     
