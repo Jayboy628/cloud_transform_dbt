@@ -101,8 +101,7 @@
 #### Installation Requriments
 
 * Install Visual Studio Code editor, Extension Python and GIT
-* Create accounts for [Snowflake] (https://github.com/Snowflake-Labs/sfquickstarts) and [Github] (https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)
-* Create a new repository on GitHub and Snowflake
+* Create accounts for [Snowflake](https://github.com/Snowflake-Labs/sfquickstarts) and new repository on [Github](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)
 * Setup a Snowflake Environment
 * Download & Installled dbt CLI
 * Initialized a new dbt project
