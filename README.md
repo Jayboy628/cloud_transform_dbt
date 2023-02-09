@@ -98,10 +98,10 @@
 <details open>
 <summary>Project Environment </summary>
 
-#### Installation requriments
+#### Installation Requriments
 
 * Install Visual Studio Code editor, Extension Python and GIT
-* Create accounts on Github and Snowflake
+* Create accounts for [Snowflake] (https://github.com/Snowflake-Labs/sfquickstarts) and [Github] (https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account)
 * Create a new repository on GitHub and Snowflake
 * Setup a Snowflake Environment
 * Download & Installled dbt CLI
@@ -118,16 +118,16 @@
     
 #### Integrate: Create stage integration for azure and snowflake (Setup a Snowflake Environment)
     
-* [`Integration.md`](Starter-Code/Integration.sql) -- Step 3 SQL Code.
+* [`Integration.md`](Starter-Code/Integration.md) -- Step 3 SQL Code.
 
     
 #### Data Load: Load CSV and JSON files  (Setup a Snowflake Environment)
-* [`Load.md`](Starter-Code/Load.sql) -- Step 4  SQL Code.
+* [`Load.md`](Starter-Code/Load.md) -- Step 4  SQL Code.
 
 
 #### GITHUB 
 <bold>Recommend to use the Visual Studio Terminal to following below steps</bold>
-```shell
+
 - Check python version: Python >= 3.5
 git clone https://github.com/Jayboy628/cloud-snowflake-dbt.git
 cd cloud-snowflake-dbt
@@ -139,8 +139,7 @@ python3 -m pip install -r requirements.txt
 source venv/bin/activate
 dbt build
 dbt docs generate
-dbt docs serve_
-```
+
 
 </details>
 
