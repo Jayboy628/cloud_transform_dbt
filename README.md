@@ -151,6 +151,6 @@
 * Automate `Testing` and `Deploying` using GitHub Actions
 * Create a schedule for running dbt models using a `Cron job`
 ***
-### Diagram Show's our CI/CD & Scheduling`Cron job` Approach
+### Diagram Shows our CI/CD & Scheduling`Cron job` Approach
 ![header](images/GithubFeatures.png)
 
