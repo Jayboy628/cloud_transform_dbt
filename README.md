@@ -2,7 +2,7 @@
 <!-- ABOUT THE PROJECT -->
 # ETL with DBT:  `Data Transform`
 
-`Data Warehouse:`AWS bicycle company has many locations in various parts of the world. However, their Transactional System (CRM Database) data are stored locally but more importantly the systems are not cross integrated. Another issue is that the CRM is not coordinated with online purchase thus led to following questions below
+`Data Warehouse:`AWS bicycle company has many locations in various parts of the world. However, their Transactional System data is stored locally, and as a result is not cross integrated. Another issue is that the CRM is not coordinated with online purchases. As a result, faulty reports are generated. The following are some of the questions asked by `users`
 
 ![header](images/logo.png)
 
@@ -40,7 +40,7 @@
  ### The dbt Viewpoint: Our Approach gets the job done quickly!
  ![header](images/BriefHistory.png)
  <bold>
- ```I have used SSIS extensively and recently dive into DBT and from my experience SSIS is a far more robust tool. However, There's no drag and drop, right click properties, configure this, configure that, etc etc in dbt. It's all code (models). More importantly dbt works damn well with Snowflake (Snowflake carries heavy lifting and cost) so I have no complaints… Management doesn't really care how complex (Truly depends on the industry) your code is, they just need that report yesterday and dbt gets the job done quickly!```
+ ```I have used SSIS extensively and more recently began using dbt. Once the user is able to overcome the steep learning curve, I have found SSIS to be a far more robust tool . Fortunately dbt has no drag and drop, right click properties, configure this, configure that, etc etc. It's all code (models). More important dbt works damn well with Snowflake (Snowflake does more of the heavy lifting) so I have no complaints… Management doesn't really care how complex your code is (industry dependent), they just need that report yesterday and dbt gets the job done quickly!```
 </bold>
 </summary>    
 <table>
