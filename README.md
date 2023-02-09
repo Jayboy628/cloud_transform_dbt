@@ -39,7 +39,8 @@
 
  ### The dbt Viewpoint: Our Approach gets the job done quickly!
  ![header](images/BriefHistory.png)
- <bold>I have used SSIS extensively and recently dive into DBT and from my experience SSIS is a far more robust tool. However, There's no drag and drop, right click properties, configure this, configure that, etc etc in dbt. It's all code (models). More importantly dbt works damn well with Snowflake (Snowflake carries heavy lifting and cost) so I have no complaints… Management doesn't really care how complex (Truly depends on the industry) your code is, they just need that report yesterday and dbt gets the job done quickly!
+ <bold>
+ ```I have used SSIS extensively and recently dive into DBT and from my experience SSIS is a far more robust tool. However, There's no drag and drop, right click properties, configure this, configure that, etc etc in dbt. It's all code (models). More importantly dbt works damn well with Snowflake (Snowflake carries heavy lifting and cost) so I have no complaints… Management doesn't really care how complex (Truly depends on the industry) your code is, they just need that report yesterday and dbt gets the job done quickly!```
 </bold>
 </summary>    
 <table>
@@ -112,16 +113,16 @@
 
 #### Snowflake: Create Data Warehouse (Setup a Snowflake Environment)
 
-* [`Snowflake.md`](Starter-Code/Snowflake.md) -- Step 1 CLI Code.
+* [`Snowflake.md`](Starter-Code/Snowflake.md) -- Step 2 SQL Code.
 
     
 #### Integrate: Create stage integration for azure and snowflake (Setup a Snowflake Environment)
     
-* [`Snowflake.md`](Starter-Code/Integration.sql) -- Step 3 SQL Code.
+* [`Integration.md`](Starter-Code/Integration.sql) -- Step 3 SQL Code.
 
     
 #### Data Load: Load CSV and JSON files  (Setup a Snowflake Environment)
-* [`Snowflake.md`](Starter-Code/Load.sql) -- Step 4  SQL Code.
+* [`Load.md`](Starter-Code/Load.sql) -- Step 4  SQL Code.
 
 
 #### GITHUB 
