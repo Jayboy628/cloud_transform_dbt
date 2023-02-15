@@ -5,7 +5,7 @@ models:
     description: A staging model for Adventure Works department.
     columns:
       - name:	DEPARTMENT_ID
-        description:	Primary key for Department records. Identity / Auto increment column
+        description:	Primary keys for Department records. Identity / Auto increment column
         tests:
           - unique
       - name:	DEPARTMENT_NAME
