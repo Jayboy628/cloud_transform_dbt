@@ -605,3 +605,1136 @@ drop view if exists ANALYTICS_DEV.warehouse.dim_products__dbt_tmp cascade
 [0m22:15:19.833766 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
 [0m22:15:19.834095 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ba81c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112e4ac40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ca8a30>]}
 [0m22:15:19.834358 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-15 18:22:23.444642 | 01e2d104-43af-49cd-9a5c-1f415df195a4 ==============================
+[0m18:22:23.444642 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:22:23.447527 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:22:23.447879 [debug] [MainThread]: Tracking: tracking
+[0m18:22:23.460153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5f040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5e950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5e8c0>]}
+[0m18:22:23.471550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5cd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5df90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106c5d7b0>]}
+[0m18:22:23.471927 [debug] [MainThread]: Flushing usage events
+[0m18:22:23.597299 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 18:24:38.853929 | 7a5fd485-bda5-4f48-b249-ce00a88a952a ==============================
+[0m18:24:38.853929 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:24:38.855398 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m18:24:38.855751 [debug] [MainThread]: Tracking: tracking
+[0m18:24:38.867688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131e30a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131e2b60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131e2920>]}
+[0m18:24:39.139186 [debug] [MainThread]: Executing "git --help"
+[0m18:24:39.148951 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:24:39.150064 [debug] [MainThread]: STDERR: "b''"
+[0m18:24:39.157635 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m18:24:39.158632 [debug] [MainThread]: Using snowflake connection "debug"
+[0m18:24:39.158878 [debug] [MainThread]: On debug: select 1 as id
+[0m18:24:39.159119 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:24:40.013328 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m18:24:40.015257 [debug] [MainThread]: On debug: Close
+[0m18:24:40.148683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114a8cc70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114499810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114379180>]}
+[0m18:24:40.149245 [debug] [MainThread]: Flushing usage events
+[0m18:24:40.264388 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-15 18:37:22.314263 | 55f28f42-2ce0-4b1c-8228-86b608ac7970 ==============================
+[0m18:37:22.314263 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:37:22.316051 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+[0m18:37:22.316290 [debug] [MainThread]: Tracking: tracking
+[0m18:37:22.316652 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d67c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d66260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d65fc0>]}
+[0m18:37:22.356023 [debug] [MainThread]: Failed to load parsed file from disk at /Users/shaunjaybrown/projects/repo/cloud_transform_dbt/target/partial_parse.msgpack: Field "docs" of type MutableMapping[str, Documentation] in Manifest has invalid value {'dbt.__overview__': {'unique_id': 'dbt.__overview__', 'package_name': 'dbt', 'root_path': '/Users/shaunjaybrown/projects/repo/dbt-synapse-env/lib/python3.9/site-packages/dbt/include/global_project', 'path': 'overview.md', 'original_file_path': 'docs/overview.md', 'name': '__overview__', 'block_contents': "### Welcome!\n\nWelcome to the auto-generated documentation for your dbt project!\n\n### Navigation\n\nYou can use the `Project` and `Database` navigation tabs on the left side of the window to explore the models\nin your project.\n\n#### Project Tab\nThe `Project` tab mirrors the directory structure of your dbt project. In this tab, you can see all of the\nmodels defined in your dbt project, as well as models imported from dbt packages.\n\n#### Database Tab\nThe `Database` tab also exposes your models, but in a format that looks more like a database explorer. This view\nshows relations (tables and views) grouped into database schemas. Note that ephemeral models are _not_ shown\nin this interface, as they do not exist in the database.\n\n### Graph Exploration\nYou can click the blue icon on the bottom-right corner of the page to view the lineage graph of your models.\n\nOn model pages, you'll see the immediate parents and children of the model you're exploring. By clicking the `Expand`\nbutton at the top-right of this lineage pane, you'll be able to see all of the models that are used to build,\nor are built from, the model you're exploring.\n\nOnce expanded, you'll be able to use the `--select` and `--exclude` model selection syntax to filter the\nmodels in the graph. For more information on model selection, check out the [dbt docs](https://docs.getdbt.com/docs/model-selection-syntax).\n\nNote that you can also right-click on models to interactively filter and explore the graph.\n\n---\n\n### More information\n\n- [What is dbt](https://docs.getdbt.com/docs/introduction)?\n- Read the [dbt viewpoint](https://docs.getdbt.com/docs/viewpoint)\n- [Installation](https://docs.getdbt.com/docs/installation)\n- Join the [dbt Community](https://www.getdbt.com/community/) for questions and discussion"}}
+[0m18:37:22.357057 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '55f28f42-2ce0-4b1c-8228-86b608ac7970', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113437fd0>]}
+[0m18:37:22.432808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e087400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fffa110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110f9ac80>]}
+[0m18:37:22.433291 [debug] [MainThread]: Flushing usage events
+[0m18:37:22.554986 [error] [MainThread]: Encountered an error:
+Compilation Error
+  The yml property file at analyses/ci.yml is invalid because the yml property file analyses/ci.yml is missing a version tag. Please consult the documentation for more information on yml property file syntax:
+  
+  https://docs.getdbt.com/reference/configs-and-properties
+
+
+============================== 2023-02-15 18:37:51.394330 | 90518323-f51d-4ba4-aca3-f064cc7f823d ==============================
+[0m18:37:51.394330 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:37:51.396052 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+[0m18:37:51.396271 [debug] [MainThread]: Tracking: tracking
+[0m18:37:51.396578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f064a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f05ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f05f90>]}
+[0m18:37:51.431204 [debug] [MainThread]: Failed to load parsed file from disk at /Users/shaunjaybrown/projects/repo/cloud_transform_dbt/target/partial_parse.msgpack: Field "docs" of type MutableMapping[str, Documentation] in Manifest has invalid value {'dbt.__overview__': {'unique_id': 'dbt.__overview__', 'package_name': 'dbt', 'root_path': '/Users/shaunjaybrown/projects/repo/dbt-synapse-env/lib/python3.9/site-packages/dbt/include/global_project', 'path': 'overview.md', 'original_file_path': 'docs/overview.md', 'name': '__overview__', 'block_contents': "### Welcome!\n\nWelcome to the auto-generated documentation for your dbt project!\n\n### Navigation\n\nYou can use the `Project` and `Database` navigation tabs on the left side of the window to explore the models\nin your project.\n\n#### Project Tab\nThe `Project` tab mirrors the directory structure of your dbt project. In this tab, you can see all of the\nmodels defined in your dbt project, as well as models imported from dbt packages.\n\n#### Database Tab\nThe `Database` tab also exposes your models, but in a format that looks more like a database explorer. This view\nshows relations (tables and views) grouped into database schemas. Note that ephemeral models are _not_ shown\nin this interface, as they do not exist in the database.\n\n### Graph Exploration\nYou can click the blue icon on the bottom-right corner of the page to view the lineage graph of your models.\n\nOn model pages, you'll see the immediate parents and children of the model you're exploring. By clicking the `Expand`\nbutton at the top-right of this lineage pane, you'll be able to see all of the models that are used to build,\nor are built from, the model you're exploring.\n\nOnce expanded, you'll be able to use the `--select` and `--exclude` model selection syntax to filter the\nmodels in the graph. For more information on model selection, check out the [dbt docs](https://docs.getdbt.com/docs/model-selection-syntax).\n\nNote that you can also right-click on models to interactively filter and explore the graph.\n\n---\n\n### More information\n\n- [What is dbt](https://docs.getdbt.com/docs/introduction)?\n- Read the [dbt viewpoint](https://docs.getdbt.com/docs/viewpoint)\n- [Installation](https://docs.getdbt.com/docs/installation)\n- Join the [dbt Community](https://www.getdbt.com/community/) for questions and discussion"}}
+[0m18:37:51.431895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '90518323-f51d-4ba4-aca3-f064cc7f823d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10966bfd0>]}
+[0m18:37:52.340834 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m18:37:52.348861 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m18:37:52.350879 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m18:37:52.352963 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m18:37:52.354937 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m18:37:52.356977 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m18:37:52.359180 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m18:37:52.361604 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m18:37:52.363562 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m18:37:52.365533 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m18:37:52.367696 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m18:37:52.369831 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m18:37:52.371796 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m18:37:52.373767 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m18:37:52.375772 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m18:37:52.377949 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m18:37:52.379913 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m18:37:52.381888 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m18:37:52.383837 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m18:37:52.385958 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m18:37:52.387925 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m18:37:52.389888 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m18:37:52.391838 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m18:37:52.393961 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m18:37:52.395923 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m18:37:52.397840 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m18:37:52.403895 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m18:37:52.405181 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m18:37:52.407584 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m18:37:52.410017 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m18:37:52.412480 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m18:37:52.414793 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m18:37:52.430380 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m18:37:52.431699 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m18:37:52.434165 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m18:37:52.447019 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m18:37:52.448112 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m18:37:52.450308 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m18:37:52.481476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10967a3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109328ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109329960>]}
+[0m18:37:52.481743 [debug] [MainThread]: Flushing usage events
+[0m18:37:52.584277 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 18:38:17.202825 | b32a9a33-f68f-4c9f-9b48-938fb6e58874 ==============================
+[0m18:38:17.202825 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:38:17.205090 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m18:38:17.205484 [debug] [MainThread]: Tracking: tracking
+[0m18:38:17.205837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a1f8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a1e050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105a1dff0>]}
+[0m18:38:17.247653 [debug] [MainThread]: Failed to load parsed file from disk at /Users/shaunjaybrown/projects/repo/cloud_transform_dbt/target/partial_parse.msgpack: Field "docs" of type MutableMapping[str, Documentation] in Manifest has invalid value {'dbt.__overview__': {'unique_id': 'dbt.__overview__', 'package_name': 'dbt', 'root_path': '/Users/shaunjaybrown/projects/repo/dbt-synapse-env/lib/python3.9/site-packages/dbt/include/global_project', 'path': 'overview.md', 'original_file_path': 'docs/overview.md', 'name': '__overview__', 'block_contents': "### Welcome!\n\nWelcome to the auto-generated documentation for your dbt project!\n\n### Navigation\n\nYou can use the `Project` and `Database` navigation tabs on the left side of the window to explore the models\nin your project.\n\n#### Project Tab\nThe `Project` tab mirrors the directory structure of your dbt project. In this tab, you can see all of the\nmodels defined in your dbt project, as well as models imported from dbt packages.\n\n#### Database Tab\nThe `Database` tab also exposes your models, but in a format that looks more like a database explorer. This view\nshows relations (tables and views) grouped into database schemas. Note that ephemeral models are _not_ shown\nin this interface, as they do not exist in the database.\n\n### Graph Exploration\nYou can click the blue icon on the bottom-right corner of the page to view the lineage graph of your models.\n\nOn model pages, you'll see the immediate parents and children of the model you're exploring. By clicking the `Expand`\nbutton at the top-right of this lineage pane, you'll be able to see all of the models that are used to build,\nor are built from, the model you're exploring.\n\nOnce expanded, you'll be able to use the `--select` and `--exclude` model selection syntax to filter the\nmodels in the graph. For more information on model selection, check out the [dbt docs](https://docs.getdbt.com/docs/model-selection-syntax).\n\nNote that you can also right-click on models to interactively filter and explore the graph.\n\n---\n\n### More information\n\n- [What is dbt](https://docs.getdbt.com/docs/introduction)?\n- Read the [dbt viewpoint](https://docs.getdbt.com/docs/viewpoint)\n- [Installation](https://docs.getdbt.com/docs/installation)\n- Join the [dbt Community](https://www.getdbt.com/community/) for questions and discussion"}}
+[0m18:38:17.248386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b32a9a33-f68f-4c9f-9b48-938fb6e58874', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106163fa0>]}
+[0m18:38:18.137363 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m18:38:18.145747 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m18:38:18.148020 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m18:38:18.150197 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m18:38:18.152245 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m18:38:18.154319 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m18:38:18.156770 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m18:38:18.159411 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m18:38:18.161452 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m18:38:18.163504 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m18:38:18.165558 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m18:38:18.167779 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m18:38:18.169821 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m18:38:18.171852 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m18:38:18.173903 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m18:38:18.176095 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m18:38:18.178136 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m18:38:18.180196 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m18:38:18.182235 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m18:38:18.184480 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m18:38:18.186521 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m18:38:18.188561 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m18:38:18.190609 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m18:38:18.192825 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m18:38:18.194864 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m18:38:18.196907 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m18:38:18.203140 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m18:38:18.204451 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m18:38:18.206997 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m18:38:18.209488 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m18:38:18.211967 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m18:38:18.214384 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m18:38:18.232242 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m18:38:18.233608 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m18:38:18.235925 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m18:38:18.248414 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m18:38:18.249540 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m18:38:18.251822 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m18:38:18.286305 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106164700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106090c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106091930>]}
+[0m18:38:18.286614 [debug] [MainThread]: Flushing usage events
+[0m18:38:19.593851 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 18:42:45.461499 | 1f885e75-f84f-4fb5-b334-44e5148f5121 ==============================
+[0m18:42:45.461499 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:42:45.463477 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+[0m18:42:45.463836 [debug] [MainThread]: Tracking: tracking
+[0m18:42:45.464243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078f7c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078f6260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078f5fc0>]}
+[0m18:42:45.505787 [debug] [MainThread]: Failed to load parsed file from disk at /Users/shaunjaybrown/projects/repo/cloud_transform_dbt/target/partial_parse.msgpack: Field "docs" of type MutableMapping[str, Documentation] in Manifest has invalid value {'dbt.__overview__': {'unique_id': 'dbt.__overview__', 'package_name': 'dbt', 'root_path': '/Users/shaunjaybrown/projects/repo/dbt-synapse-env/lib/python3.9/site-packages/dbt/include/global_project', 'path': 'overview.md', 'original_file_path': 'docs/overview.md', 'name': '__overview__', 'block_contents': "### Welcome!\n\nWelcome to the auto-generated documentation for your dbt project!\n\n### Navigation\n\nYou can use the `Project` and `Database` navigation tabs on the left side of the window to explore the models\nin your project.\n\n#### Project Tab\nThe `Project` tab mirrors the directory structure of your dbt project. In this tab, you can see all of the\nmodels defined in your dbt project, as well as models imported from dbt packages.\n\n#### Database Tab\nThe `Database` tab also exposes your models, but in a format that looks more like a database explorer. This view\nshows relations (tables and views) grouped into database schemas. Note that ephemeral models are _not_ shown\nin this interface, as they do not exist in the database.\n\n### Graph Exploration\nYou can click the blue icon on the bottom-right corner of the page to view the lineage graph of your models.\n\nOn model pages, you'll see the immediate parents and children of the model you're exploring. By clicking the `Expand`\nbutton at the top-right of this lineage pane, you'll be able to see all of the models that are used to build,\nor are built from, the model you're exploring.\n\nOnce expanded, you'll be able to use the `--select` and `--exclude` model selection syntax to filter the\nmodels in the graph. For more information on model selection, check out the [dbt docs](https://docs.getdbt.com/docs/model-selection-syntax).\n\nNote that you can also right-click on models to interactively filter and explore the graph.\n\n---\n\n### More information\n\n- [What is dbt](https://docs.getdbt.com/docs/introduction)?\n- Read the [dbt viewpoint](https://docs.getdbt.com/docs/viewpoint)\n- [Installation](https://docs.getdbt.com/docs/installation)\n- Join the [dbt Community](https://www.getdbt.com/community/) for questions and discussion"}}
+[0m18:42:45.506490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1f885e75-f84f-4fb5-b334-44e5148f5121', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10806bfd0>]}
+[0m18:42:46.320311 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m18:42:46.328331 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m18:42:46.330372 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m18:42:46.332703 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m18:42:46.334644 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m18:42:46.336564 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m18:42:46.338490 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m18:42:46.340840 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m18:42:46.342834 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m18:42:46.344811 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m18:42:46.346715 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m18:42:46.348850 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m18:42:46.350756 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m18:42:46.352678 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m18:42:46.354569 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m18:42:46.356610 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m18:42:46.358850 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m18:42:46.360792 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m18:42:46.362710 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m18:42:46.365092 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m18:42:46.367145 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m18:42:46.369076 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m18:42:46.370962 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m18:42:46.373013 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m18:42:46.374905 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m18:42:46.376998 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m18:42:46.382822 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m18:42:46.384061 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m18:42:46.386454 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m18:42:46.388889 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m18:42:46.391261 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m18:42:46.393558 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m18:42:46.408862 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m18:42:46.410113 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m18:42:46.412266 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m18:42:46.424007 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m18:42:46.425071 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m18:42:46.427504 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m18:42:46.458495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108083790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d1cc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107d1d900>]}
+[0m18:42:46.458771 [debug] [MainThread]: Flushing usage events
+[0m18:42:46.592920 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 18:59:53.849309 | f424e51f-237b-4bd0-b246-d7a651346f89 ==============================
+[0m18:59:53.849309 [info ] [MainThread]: Running with dbt=1.4.1
+[0m18:59:53.850625 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'clean', 'indirect_selection': 'eager'}
+[0m18:59:53.850839 [debug] [MainThread]: Tracking: tracking
+[0m18:59:53.865063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b4b6620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b46d810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b46ff10>]}
+[0m18:59:53.892036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b46fc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b46ee30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b46e6b0>]}
+[0m18:59:53.892409 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-15 19:00:30.619556 | 71b87d8b-f4d6-406d-a06b-d4f6a2dedef8 ==============================
+[0m19:00:30.619556 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:00:30.621507 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+[0m19:00:30.621869 [debug] [MainThread]: Tracking: tracking
+[0m19:00:30.622200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a346bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3aa0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3aa050>]}
+[0m19:00:30.622851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a346bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3aa0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3aa050>]}
+[0m19:00:30.623129 [debug] [MainThread]: Flushing usage events
+[0m19:00:30.742558 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found 2 package(s) specified in packages.yml, but only 0 package(s) installed in dbt_packages. Run "dbt deps" to install package dependencies.
+
+
+============================== 2023-02-15 19:00:42.919967 | 573c6665-5f62-41a1-bf8b-a3437d7664a3 ==============================
+[0m19:00:42.919967 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:00:42.921308 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m19:00:42.921653 [debug] [MainThread]: Tracking: tracking
+[0m19:00:42.933738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097be680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1097797e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10977bee0>]}
+[0m19:00:42.935722 [debug] [MainThread]: Set downloads directory='/var/folders/4p/8jn3gx555kv9dmnjx324966r0000gn/T/dbt-downloads-dqylu04g'
+[0m19:00:42.936529 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:00:43.075424 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:00:43.076065 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:00:43.187251 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:00:43.215934 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/audit_helper.json
+[0m19:00:43.348109 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/audit_helper.json 200
+[0m19:00:43.411949 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:00:43.613940 [info ] [MainThread]:   Installed from version 1.0.0
+[0m19:00:43.614478 [info ] [MainThread]:   Up to date!
+[0m19:00:43.615061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '573c6665-5f62-41a1-bf8b-a3437d7664a3', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10977ad10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10977a8f0>]}
+[0m19:00:43.615478 [info ] [MainThread]: Installing dbt-labs/audit_helper
+[0m19:00:43.705510 [info ] [MainThread]:   Installed from version 0.6.0
+[0m19:00:43.705894 [info ] [MainThread]:   Updated version available: 0.7.0
+[0m19:00:43.706239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '573c6665-5f62-41a1-bf8b-a3437d7664a3', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10977a6b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10977bac0>]}
+[0m19:00:43.706558 [info ] [MainThread]: 
+[0m19:00:43.706895 [info ] [MainThread]: Updates available for packages: ['dbt-labs/audit_helper']                 
+Update your versions in packages.yml, then run dbt deps
+[0m19:00:43.707765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10983ab90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109778070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10977a860>]}
+[0m19:00:43.708121 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-15 19:01:23.015155 | 384cf458-cc42-4b32-a2a2-61704e4d53c0 ==============================
+[0m19:01:23.015155 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:01:23.017073 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+[0m19:01:23.017372 [debug] [MainThread]: Tracking: tracking
+[0m19:01:23.017706 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b06a440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b069f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b069f30>]}
+[0m19:01:23.046337 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:01:23.046806 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '384cf458-cc42-4b32-a2a2-61704e4d53c0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b06b7c0>]}
+[0m19:01:23.955693 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m19:01:23.964198 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m19:01:23.966421 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m19:01:23.968500 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m19:01:23.970580 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m19:01:23.972675 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m19:01:23.974910 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m19:01:23.976958 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m19:01:23.979018 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m19:01:23.981098 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m19:01:23.983342 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m19:01:23.985396 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m19:01:23.987439 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m19:01:23.989501 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m19:01:23.991750 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m19:01:23.993812 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m19:01:23.995866 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m19:01:23.997923 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m19:01:24.000138 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m19:01:24.002183 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m19:01:24.004243 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m19:01:24.006394 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m19:01:24.008617 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m19:01:24.010674 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m19:01:24.012727 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m19:01:24.014657 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m19:01:24.020764 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m19:01:24.022028 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m19:01:24.024812 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m19:01:24.027268 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m19:01:24.029814 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m19:01:24.032034 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m19:01:24.047423 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m19:01:24.048659 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m19:01:24.050913 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m19:01:24.062393 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m19:01:24.063449 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m19:01:24.065587 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m19:01:24.097170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077933a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7b7760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b7b7be0>]}
+[0m19:01:24.097455 [debug] [MainThread]: Flushing usage events
+[0m19:01:24.187530 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 19:01:45.714412 | fc836a3d-3148-4b1b-bcd7-a5f7fddb35ce ==============================
+[0m19:01:45.714412 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:01:45.716298 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'resource_types': [], 'output': 'selector', 'indirect_selection': 'eager', 'which': 'list'}
+[0m19:01:45.716499 [debug] [MainThread]: Tracking: tracking
+[0m19:01:45.716897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11108abf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1110f20b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1110f2050>]}
+[0m19:01:45.738784 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:01:45.739056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fc836a3d-3148-4b1b-bcd7-a5f7fddb35ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111101a80>]}
+[0m19:01:46.560351 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m19:01:46.568285 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m19:01:46.570430 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m19:01:46.572362 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m19:01:46.574473 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m19:01:46.576405 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m19:01:46.578475 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m19:01:46.580494 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m19:01:46.582453 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m19:01:46.584387 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m19:01:46.586477 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m19:01:46.588356 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m19:01:46.590253 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m19:01:46.592182 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m19:01:46.594237 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m19:01:46.596126 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m19:01:46.598490 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m19:01:46.600494 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m19:01:46.602621 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m19:01:46.604554 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m19:01:46.606455 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m19:01:46.608556 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m19:01:46.610763 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m19:01:46.612658 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m19:01:46.614619 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m19:01:46.616475 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m19:01:46.622889 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m19:01:46.624175 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m19:01:46.626676 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m19:01:46.628964 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m19:01:46.631300 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m19:01:46.633521 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m19:01:46.648774 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m19:01:46.650028 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m19:01:46.652233 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m19:01:46.663533 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m19:01:46.664766 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m19:01:46.666758 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m19:01:46.698261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1110ee3e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1118974c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111897e50>]}
+[0m19:01:46.698516 [debug] [MainThread]: Flushing usage events
+[0m19:01:46.798996 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 19:05:31.362143 | 973843c0-f4ac-47a2-8c1b-14afb154b0b9 ==============================
+[0m19:05:31.362143 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:05:31.364060 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m19:05:31.364455 [debug] [MainThread]: Tracking: tracking
+[0m19:05:31.364830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da478e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da46050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da45ff0>]}
+[0m19:05:31.391795 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:05:31.392214 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '973843c0-f4ac-47a2-8c1b-14afb154b0b9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10da47160>]}
+[0m19:05:32.250716 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m19:05:32.259091 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m19:05:32.261254 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m19:05:32.263280 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m19:05:32.265346 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m19:05:32.267422 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m19:05:32.269696 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m19:05:32.271686 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m19:05:32.273682 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m19:05:32.275697 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m19:05:32.277924 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m19:05:32.279997 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m19:05:32.282004 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m19:05:32.283997 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m19:05:32.286167 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m19:05:32.288193 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m19:05:32.290178 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m19:05:32.292328 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m19:05:32.294467 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m19:05:32.296442 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m19:05:32.298480 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m19:05:32.300482 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m19:05:32.302643 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m19:05:32.304635 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m19:05:32.306612 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m19:05:32.308603 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m19:05:32.315069 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m19:05:32.316411 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m19:05:32.319013 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m19:05:32.321279 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m19:05:32.323803 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m19:05:32.326031 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m19:05:32.342381 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m19:05:32.343633 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m19:05:32.346271 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m19:05:32.358743 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m19:05:32.360190 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m19:05:32.362287 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m19:05:32.394471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10adf1720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1b7700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1b7b20>]}
+[0m19:05:32.394750 [debug] [MainThread]: Flushing usage events
+[0m19:05:32.504257 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 19:05:43.822431 | 83c5eec8-2c23-4533-923f-3dc9a094d360 ==============================
+[0m19:05:43.822431 [info ] [MainThread]: Running with dbt=1.4.1
+[0m19:05:43.824310 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m19:05:43.824709 [debug] [MainThread]: Tracking: tracking
+[0m19:05:43.825026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d00bd60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d00a350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d00a2f0>]}
+[0m19:05:43.851702 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:05:43.852078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '83c5eec8-2c23-4533-923f-3dc9a094d360', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d00bc10>]}
+[0m19:05:44.696736 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m19:05:44.704758 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m19:05:44.706993 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m19:05:44.709007 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m19:05:44.711001 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m19:05:44.712945 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m19:05:44.715002 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m19:05:44.717139 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m19:05:44.719038 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m19:05:44.720942 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m19:05:44.723163 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m19:05:44.725088 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m19:05:44.727046 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m19:05:44.728949 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m19:05:44.731228 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m19:05:44.733184 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m19:05:44.735075 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m19:05:44.737010 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m19:05:44.739346 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m19:05:44.741227 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m19:05:44.743187 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m19:05:44.745079 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m19:05:44.747141 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m19:05:44.749066 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m19:05:44.751029 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m19:05:44.752925 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m19:05:44.759148 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m19:05:44.760462 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m19:05:44.763034 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m19:05:44.765352 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m19:05:44.767864 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m19:05:44.770092 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m19:05:44.785325 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m19:05:44.786587 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m19:05:44.788799 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m19:05:44.800543 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m19:05:44.801609 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m19:05:44.803601 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m19:05:44.835470 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d034e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7d76a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d7d7a60>]}
+[0m19:05:44.835723 [debug] [MainThread]: Flushing usage events
+[0m19:05:44.943895 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:28:54.791928 | 161a7b00-f8a6-461a-8824-39bd0fec5584 ==============================
+[0m22:28:54.791928 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:28:54.794893 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m22:28:54.795125 [debug] [MainThread]: Tracking: tracking
+[0m22:28:54.795438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11337a440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113379f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11337b1f0>]}
+[0m22:28:54.823864 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:28:54.824701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '161a7b00-f8a6-461a-8824-39bd0fec5584', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11337aad0>]}
+[0m22:28:55.716999 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:28:55.726839 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:28:55.729430 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:28:55.731585 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:28:55.733706 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:28:55.735863 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:28:55.738102 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:28:55.740158 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:28:55.742220 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:28:55.744340 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:28:55.746591 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:28:55.748648 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:28:55.750700 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:28:55.752883 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:28:55.755173 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:28:55.757234 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:28:55.759286 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:28:55.761338 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:28:55.763563 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:28:55.765612 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:28:55.767665 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:28:55.769718 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:28:55.772157 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:28:55.774216 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:28:55.776279 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:28:55.778256 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:28:55.785477 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:28:55.787006 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:28:55.789593 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:28:55.791979 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:28:55.794460 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:28:55.796749 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:28:55.813088 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:28:55.814379 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:28:55.816608 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:28:55.830856 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:28:55.832218 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:28:55.834498 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:28:55.871653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110eeeec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113acb790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113acbc10>]}
+[0m22:28:55.871988 [debug] [MainThread]: Flushing usage events
+[0m22:28:56.010431 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:30:15.494130 | dbda1385-b884-400e-9b3c-0ae499984ad7 ==============================
+[0m22:30:15.494130 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:30:15.495420 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+[0m22:30:15.495669 [debug] [MainThread]: Tracking: tracking
+[0m22:30:15.508489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fefa680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10feb1930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10feb3fa0>]}
+[0m22:30:15.510308 [debug] [MainThread]: Set downloads directory='/var/folders/4p/8jn3gx555kv9dmnjx324966r0000gn/T/dbt-downloads-zozws_y8'
+[0m22:30:15.510969 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m22:30:15.628474 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m22:30:15.629130 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m22:30:15.692409 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m22:30:15.721555 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/audit_helper.json
+[0m22:30:15.787571 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/audit_helper.json 200
+[0m22:30:15.848601 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m22:30:16.084113 [info ] [MainThread]:   Installed from version 1.0.0
+[0m22:30:16.084533 [info ] [MainThread]:   Up to date!
+[0m22:30:16.084920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dbda1385-b884-400e-9b3c-0ae499984ad7', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10feb2d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10feb1930>]}
+[0m22:30:16.085240 [info ] [MainThread]: Installing dbt-labs/audit_helper
+[0m22:30:16.247353 [info ] [MainThread]:   Installed from version 0.6.0
+[0m22:30:16.247789 [info ] [MainThread]:   Updated version available: 0.7.0
+[0m22:30:16.248146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dbda1385-b884-400e-9b3c-0ae499984ad7', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff7feb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10feb2d40>]}
+[0m22:30:16.248455 [info ] [MainThread]: 
+[0m22:30:16.248798 [info ] [MainThread]: Updates available for packages: ['dbt-labs/audit_helper']                 
+Update your versions in packages.yml, then run dbt deps
+[0m22:30:16.249586 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ff72980>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10feb2800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10feb3c40>]}
+[0m22:30:16.249911 [debug] [MainThread]: Flushing usage events
+
+
+============================== 2023-02-15 22:30:38.519003 | 417b6d5f-6a30-4627-a315-3de3cb73e1c3 ==============================
+[0m22:30:38.519003 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:30:38.521119 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m22:30:38.521464 [debug] [MainThread]: Tracking: tracking
+[0m22:30:38.521772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b3138e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b312050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b311ff0>]}
+[0m22:30:38.548383 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:30:38.548782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '417b6d5f-6a30-4627-a315-3de3cb73e1c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b310d30>]}
+[0m22:30:39.386150 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:30:39.394223 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:30:39.396381 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:30:39.398331 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:30:39.400266 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:30:39.402219 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:30:39.404926 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:30:39.407377 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:30:39.409333 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:30:39.411301 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:30:39.413492 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:30:39.415462 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:30:39.417378 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:30:39.419294 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:30:39.421655 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:30:39.423919 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:30:39.425827 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:30:39.427744 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:30:39.429837 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:30:39.431738 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:30:39.433762 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:30:39.435671 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:30:39.437827 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:30:39.439775 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:30:39.441718 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:30:39.443589 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:30:39.449796 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:30:39.451093 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:30:39.453659 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:30:39.455875 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:30:39.458387 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:30:39.460548 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:30:39.475829 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:30:39.477092 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:30:39.479237 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:30:39.492153 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:30:39.493503 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:30:39.495466 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:30:39.527067 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1086b5720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bacb700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bacbb20>]}
+[0m22:30:39.527323 [debug] [MainThread]: Flushing usage events
+[0m22:30:39.626608 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:31:45.726122 | ca119f4a-f898-4de0-be9a-76f6b9baa4e0 ==============================
+[0m22:31:45.726122 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:31:45.728304 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'write_manifest': False, 'compile': False, 'which': 'parse', 'rpc_method': 'parse', 'indirect_selection': 'eager'}
+[0m22:31:45.728632 [debug] [MainThread]: Tracking: tracking
+[0m22:31:45.728977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11201f8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11201e020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11201dfc0>]}
+[0m22:31:45.729387 [info ] [MainThread]: Start parsing.
+[0m22:31:45.755659 [info ] [MainThread]: Dependencies loaded
+[0m22:31:45.757086 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:31:45.757459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ca119f4a-f898-4de0-be9a-76f6b9baa4e0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11201cd30>]}
+[0m22:31:45.757986 [info ] [MainThread]: ManifestLoader created
+[0m22:31:46.601008 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:31:46.609531 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:31:46.611586 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:31:46.613844 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:31:46.615885 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:31:46.617859 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:31:46.620139 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:31:46.622201 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:31:46.624208 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:31:46.626161 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:31:46.628285 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:31:46.630338 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:31:46.632271 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:31:46.634209 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:31:46.636295 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:31:46.638450 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:31:46.640411 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:31:46.642491 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:31:46.644775 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:31:46.646853 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:31:46.648906 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:31:46.650828 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:31:46.652921 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:31:46.654989 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:31:46.656947 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:31:46.658870 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:31:46.664979 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:31:46.666217 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:31:46.668700 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:31:46.671065 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:31:46.673559 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:31:46.675786 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:31:46.691365 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:31:46.692574 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:31:46.694749 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:31:46.706919 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:31:46.708025 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:31:46.709984 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:31:46.742350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11201c760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1127bb730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1127bbb20>]}
+[0m22:31:46.742772 [debug] [MainThread]: Flushing usage events
+[0m22:31:46.864641 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:41:40.955173 | c7c23dd7-8739-45da-92a9-3b8a8ae5d137 ==============================
+[0m22:41:40.955173 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:41:40.957212 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'source-freshness', 'rpc_method': 'source-freshness', 'indirect_selection': 'eager'}
+[0m22:41:40.957500 [debug] [MainThread]: Tracking: tracking
+[0m22:41:40.957855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec364a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec35ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec35f90>]}
+[0m22:41:40.984306 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:41:40.984691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c7c23dd7-8739-45da-92a9-3b8a8ae5d137', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec37040>]}
+[0m22:41:41.832275 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:41:41.840737 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:41:41.842937 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:41:41.844966 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:41:41.847027 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:41:41.849043 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:41:41.851201 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:41:41.853184 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:41:41.855173 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:41:41.857179 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:41:41.859381 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:41:41.861405 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:41:41.863508 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:41:41.865549 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:41:41.867758 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:41:41.870026 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:41:41.872114 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:41:41.874145 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:41:41.876328 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:41:41.878344 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:41:41.880439 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:41:41.882467 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:41:41.884667 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:41:41.886701 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:41:41.888718 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:41:41.890701 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:41:41.897383 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:41:41.898668 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:41:41.902839 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:41:41.905273 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:41:41.907736 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:41:41.910111 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:41:41.926347 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:41:41.927613 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:41:41.929967 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:41:41.942194 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:41:41.943327 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:41:41.945430 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:41:41.978147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ed35ea0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f38b730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f38bb20>]}
+[0m22:41:41.978446 [debug] [MainThread]: Flushing usage events
+[0m22:41:42.128636 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:42:18.345975 | 6a11fbee-9919-4dea-a925-b340d8f6e273 ==============================
+[0m22:42:18.345975 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:42:18.347926 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'which': 'source-freshness', 'rpc_method': 'source-freshness', 'indirect_selection': 'eager'}
+[0m22:42:18.348388 [debug] [MainThread]: Tracking: tracking
+[0m22:42:18.348754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fc76bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcda0b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcda050>]}
+[0m22:42:18.375163 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:42:18.375570 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6a11fbee-9919-4dea-a925-b340d8f6e273', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd032b0>]}
+[0m22:42:19.211846 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:42:19.219756 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:42:19.221862 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:42:19.223932 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:42:19.225902 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:42:19.227906 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:42:19.230012 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:42:19.231924 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:42:19.233901 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:42:19.235835 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:42:19.237936 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:42:19.240137 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:42:19.242064 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:42:19.244078 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:42:19.246452 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:42:19.248367 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:42:19.250479 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:42:19.252447 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:42:19.254547 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:42:19.257378 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:42:19.259613 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:42:19.261680 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:42:19.263773 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:42:19.265688 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:42:19.267616 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:42:19.269498 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:42:19.277293 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:42:19.278625 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:42:19.281129 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:42:19.283406 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:42:19.285813 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:42:19.289406 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:42:19.304971 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:42:19.306275 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:42:19.308517 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:42:19.320235 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:42:19.321486 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:42:19.323526 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:42:19.355202 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10eb3dab0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104e74f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1104e7e80>]}
+[0m22:42:19.355456 [debug] [MainThread]: Flushing usage events
+[0m22:42:19.453444 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:44:11.565143 | 9d0f484b-ca8d-409d-8484-73bccb26bf42 ==============================
+[0m22:44:11.565143 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:44:11.566946 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'write_manifest': False, 'compile': False, 'which': 'parse', 'rpc_method': 'parse', 'indirect_selection': 'eager'}
+[0m22:44:11.567292 [debug] [MainThread]: Tracking: tracking
+[0m22:44:11.567611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f16c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f7e380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f7e320>]}
+[0m22:44:11.568046 [info ] [MainThread]: Start parsing.
+[0m22:44:11.596314 [info ] [MainThread]: Dependencies loaded
+[0m22:44:11.597492 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:44:11.597825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '9d0f484b-ca8d-409d-8484-73bccb26bf42', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108f80fd0>]}
+[0m22:44:11.598234 [info ] [MainThread]: ManifestLoader created
+[0m22:44:12.434744 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:44:12.442688 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:44:12.446293 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:44:12.449780 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:44:12.452265 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:44:12.455227 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:44:12.457705 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:44:12.459921 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:44:12.462120 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:44:12.464212 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:44:12.466471 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:44:12.468573 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:44:12.470545 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:44:12.472533 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:44:12.474713 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:44:12.476933 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:44:12.479002 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:44:12.481655 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:44:12.484279 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:44:12.486265 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:44:12.488683 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:44:12.490663 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:44:12.492805 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:44:12.494779 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:44:12.496762 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:44:12.498696 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:44:12.505035 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:44:12.506329 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:44:12.508841 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:44:12.511195 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:44:12.513582 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:44:12.515887 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:44:12.531738 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:44:12.533001 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:44:12.535256 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:44:12.547138 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:44:12.548552 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:44:12.550642 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:44:12.582799 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ffc1f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096ff490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1096ffe20>]}
+[0m22:44:12.583058 [debug] [MainThread]: Flushing usage events
+[0m22:44:12.708044 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:45:27.033084 | 273ddf6a-b236-4a2a-ae22-8196cf247306 ==============================
+[0m22:45:27.033084 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:45:27.035205 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+[0m22:45:27.035550 [debug] [MainThread]: Tracking: tracking
+[0m22:45:27.035878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133da4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133d9ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133d9f90>]}
+[0m22:45:27.065021 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:45:27.065387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '273ddf6a-b236-4a2a-ae22-8196cf247306', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1133dada0>]}
+[0m22:45:27.910791 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:45:27.918782 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:45:27.920905 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:45:27.922858 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:45:27.924872 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:45:27.926948 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:45:27.929053 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:45:27.931050 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:45:27.933050 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:45:27.935058 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:45:27.937229 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:45:27.939142 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:45:27.941074 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:45:27.943103 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:45:27.945195 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:45:27.947108 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:45:27.949090 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:45:27.951054 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:45:27.953417 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:45:27.955332 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:45:27.957292 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:45:27.959286 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:45:27.961460 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:45:27.963384 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:45:27.965300 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:45:27.967178 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:45:27.973397 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:45:27.974632 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:45:27.977648 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:45:27.979969 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:45:27.982612 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:45:27.984876 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:45:28.000151 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:45:28.001651 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:45:28.003821 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:45:28.015539 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:45:28.016601 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:45:28.018699 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:45:28.050046 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1134c7cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113bb7730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113bb7b20>]}
+[0m22:45:28.050301 [debug] [MainThread]: Flushing usage events
+[0m22:45:28.156305 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:45:33.644226 | fb601df6-5d7e-4235-931e-0d3017d0c616 ==============================
+[0m22:45:33.644226 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:45:33.646047 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+[0m22:45:33.646402 [debug] [MainThread]: Tracking: tracking
+[0m22:45:33.646705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109293c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109292260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109291fc0>]}
+[0m22:45:33.674999 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:45:33.675399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fb601df6-5d7e-4235-931e-0d3017d0c616', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10922dff0>]}
+[0m22:45:34.567271 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:45:34.575187 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:45:34.577265 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:45:34.579190 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:45:34.581237 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:45:34.583518 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:45:34.585657 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:45:34.587853 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:45:34.589887 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:45:34.591779 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:45:34.594069 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:45:34.595968 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:45:34.598054 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:45:34.600006 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:45:34.602204 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:45:34.604108 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:45:34.606040 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:45:34.608138 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:45:34.610360 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:45:34.612245 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:45:34.614149 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:45:34.616374 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:45:34.618507 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:45:34.620412 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:45:34.622395 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:45:34.624262 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:45:34.630262 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:45:34.631604 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:45:34.634197 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:45:34.636508 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:45:34.638825 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:45:34.641015 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:45:34.656509 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:45:34.657755 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:45:34.659876 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:45:34.671564 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:45:34.672717 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:45:34.674667 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:45:34.706415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1064f2d70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d76d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1099d7a90>]}
+[0m22:45:34.706672 [debug] [MainThread]: Flushing usage events
+[0m22:45:34.818231 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:50:12.064324 | 66923fae-ae30-4baf-80a9-a9faa357a31c ==============================
+[0m22:50:12.064324 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:50:12.065609 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m22:50:12.065994 [debug] [MainThread]: Tracking: tracking
+[0m22:50:12.077176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f26f50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f26ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f26950>]}
+[0m22:50:12.084439 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f24c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f25ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107f247f0>]}
+[0m22:50:12.084758 [debug] [MainThread]: Flushing usage events
+[0m22:50:12.199252 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 22:53:28.670764 | 3a1f2031-ca70-41a6-851c-143f1049606c ==============================
+[0m22:53:28.670764 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:53:28.672163 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m22:53:28.672501 [debug] [MainThread]: Tracking: tracking
+[0m22:53:28.684262 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a7f0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a7eb60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a7e920>]}
+[0m22:53:28.962409 [debug] [MainThread]: Executing "git --help"
+[0m22:53:28.971554 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:53:28.972169 [debug] [MainThread]: STDERR: "b''"
+[0m22:53:28.981943 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m22:53:28.983629 [debug] [MainThread]: Using snowflake connection "debug"
+[0m22:53:28.984492 [debug] [MainThread]: On debug: select 1 as id
+[0m22:53:28.985177 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:53:29.973993 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m22:53:29.975909 [debug] [MainThread]: On debug: Close
+[0m22:53:30.104086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c3b8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1093212a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108c50eb0>]}
+[0m22:53:30.104643 [debug] [MainThread]: Flushing usage events
+[0m22:53:30.239114 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-15 22:53:47.703717 | 1887866b-fce8-4b02-9503-f66b40a4d964 ==============================
+[0m22:53:47.703717 [info ] [MainThread]: Running with dbt=1.4.1
+[0m22:53:47.705701 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+[0m22:53:47.706028 [debug] [MainThread]: Tracking: tracking
+[0m22:53:47.706350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cba3d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cba2320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cba22c0>]}
+[0m22:53:47.735413 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m22:53:47.735770 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1887866b-fce8-4b02-9503-f66b40a4d964', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cb3a050>]}
+[0m22:53:48.572009 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m22:53:48.580305 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m22:53:48.582458 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m22:53:48.584400 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m22:53:48.586429 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m22:53:48.588381 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m22:53:48.590531 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m22:53:48.592564 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m22:53:48.594489 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m22:53:48.596541 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m22:53:48.598773 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m22:53:48.600677 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m22:53:48.602606 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m22:53:48.604533 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m22:53:48.606653 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m22:53:48.608569 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m22:53:48.610480 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m22:53:48.612471 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m22:53:48.614601 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m22:53:48.616758 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m22:53:48.618682 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m22:53:48.620600 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m22:53:48.622862 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m22:53:48.624850 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m22:53:48.626755 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m22:53:48.628851 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m22:53:48.634928 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m22:53:48.636267 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m22:53:48.638832 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m22:53:48.641107 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m22:53:48.643551 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m22:53:48.645894 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m22:53:48.661365 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m22:53:48.662707 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m22:53:48.664994 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m22:53:48.676934 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m22:53:48.678003 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m22:53:48.680095 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m22:53:48.711457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10cc8bb80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d2d7670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d2d7ac0>]}
+[0m22:53:48.711753 [debug] [MainThread]: Flushing usage events
+[0m22:53:48.808805 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 23:06:18.438009 | 49692be1-172d-4a20-a0a9-0f1fd1fdb2fc ==============================
+[0m23:06:18.438009 [info ] [MainThread]: Running with dbt=1.4.1
+[0m23:06:18.439307 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m23:06:18.439506 [debug] [MainThread]: Tracking: tracking
+[0m23:06:18.450069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f957040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f956950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f956980>]}
+[0m23:06:18.735688 [debug] [MainThread]: Executing "git --help"
+[0m23:06:18.744571 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:06:18.745137 [debug] [MainThread]: STDERR: "b''"
+[0m23:06:18.751403 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m23:06:18.752400 [debug] [MainThread]: Using snowflake connection "debug"
+[0m23:06:18.752642 [debug] [MainThread]: On debug: select 1 as id
+[0m23:06:18.752886 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:06:19.587221 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m23:06:19.588977 [debug] [MainThread]: On debug: Close
+[0m23:06:19.701857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110ab8280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110aef7c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c0d7e0>]}
+[0m23:06:19.702268 [debug] [MainThread]: Flushing usage events
+[0m23:06:19.800923 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-15 23:06:32.934311 | e31ed370-ae54-485e-aca0-f197222a3396 ==============================
+[0m23:06:32.934311 [info ] [MainThread]: Running with dbt=1.4.1
+[0m23:06:32.936203 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'parse_only': False, 'which': 'compile', 'rpc_method': 'compile', 'indirect_selection': 'eager'}
+[0m23:06:32.936555 [debug] [MainThread]: Tracking: tracking
+[0m23:06:32.936925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e578e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e56050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e55ff0>]}
+[0m23:06:32.964587 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:06:32.964911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'e31ed370-ae54-485e-aca0-f197222a3396', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e549d0>]}
+[0m23:06:33.816616 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m23:06:33.824714 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m23:06:33.826798 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m23:06:33.828931 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m23:06:33.830850 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m23:06:33.832777 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m23:06:33.834978 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m23:06:33.837356 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m23:06:33.839266 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m23:06:33.841246 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m23:06:33.843312 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m23:06:33.845194 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m23:06:33.847089 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m23:06:33.849094 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m23:06:33.851156 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m23:06:33.853464 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m23:06:33.855360 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m23:06:33.857439 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m23:06:33.859484 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m23:06:33.861499 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m23:06:33.863399 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m23:06:33.865524 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m23:06:33.867738 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m23:06:33.869777 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m23:06:33.871657 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m23:06:33.873544 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m23:06:33.879538 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m23:06:33.880789 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m23:06:33.883255 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m23:06:33.885684 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m23:06:33.888052 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m23:06:33.890293 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m23:06:33.906009 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m23:06:33.907297 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m23:06:33.909444 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m23:06:33.921477 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m23:06:33.922538 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m23:06:33.924642 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m23:06:33.956335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108ef8700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095a36d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1095a01f0>]}
+[0m23:06:33.956612 [debug] [MainThread]: Flushing usage events
+[0m23:06:34.064458 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
+
+
+============================== 2023-02-15 23:08:39.490218 | efbccb9b-c3b7-47cb-87e3-99fbf17c3cf2 ==============================
+[0m23:08:39.490218 [info ] [MainThread]: Running with dbt=1.4.1
+[0m23:08:39.491637 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m23:08:39.491822 [debug] [MainThread]: Tracking: tracking
+[0m23:08:39.502257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10922e7a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10922fdc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10922c280>]}
+[0m23:08:39.801390 [debug] [MainThread]: Executing "git --help"
+[0m23:08:39.811304 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:08:39.812158 [debug] [MainThread]: STDERR: "b''"
+[0m23:08:39.820578 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m23:08:39.821816 [debug] [MainThread]: Using snowflake connection "debug"
+[0m23:08:39.822120 [debug] [MainThread]: On debug: select 1 as id
+[0m23:08:39.822423 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:08:40.848921 [debug] [MainThread]: SQL status: SUCCESS 1 in 1 seconds
+[0m23:08:40.850647 [debug] [MainThread]: On debug: Close
+[0m23:08:40.963254 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a511390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a403c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a4028f0>]}
+[0m23:08:40.963821 [debug] [MainThread]: Flushing usage events
+[0m23:08:41.110528 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2023-02-15 23:08:48.330006 | a2a00836-b4d8-4d47-b3f2-cc36ba655598 ==============================
+[0m23:08:48.330006 [info ] [MainThread]: Running with dbt=1.4.1
+[0m23:08:48.332907 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/shaunjaybrown/projects/repo/cloud_transform_dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'indirect_selection': 'eager', 'resource_types': [], 'which': 'build', 'rpc_method': 'build'}
+[0m23:08:48.333243 [debug] [MainThread]: Tracking: tracking
+[0m23:08:48.333604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cc2440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cc1f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cc1f30>]}
+[0m23:08:48.361109 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:08:48.361489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'a2a00836-b4d8-4d47-b3f2-cc36ba655598', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cc0e50>]}
+[0m23:08:49.282458 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_territory.sql
+[0m23:08:49.291400 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__special_offer.sql
+[0m23:08:49.293751 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__customer.sql
+[0m23:08:49.295878 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_header.sql
+[0m23:08:49.297957 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_person.sql
+[0m23:08:49.300235 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__store.sql
+[0m23:08:49.302465 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_order_detail.sql
+[0m23:08:49.304498 [debug] [MainThread]: 1699: static parser successfully parsed staging/sales/stg_sales__sales_reason.sql
+[0m23:08:49.306862 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__state_province.sql
+[0m23:08:49.309461 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person.sql
+[0m23:08:49.311875 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__country_region.sql
+[0m23:08:49.314041 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__email_address.sql
+[0m23:08:49.316084 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_address.sql
+[0m23:08:49.318151 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__business_entity_contact.sql
+[0m23:08:49.320397 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__contact_type.sql
+[0m23:08:49.323010 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__address.sql
+[0m23:08:49.325200 [debug] [MainThread]: 1699: static parser successfully parsed staging/person/stg_person__person_phone.sql
+[0m23:08:49.327807 [debug] [MainThread]: 1699: static parser successfully parsed staging/public/stg_public__dates.sql
+[0m23:08:49.330294 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_category.sql
+[0m23:08:49.332332 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_model.sql
+[0m23:08:49.334674 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product.sql
+[0m23:08:49.336714 [debug] [MainThread]: 1699: static parser successfully parsed staging/production/stg_production__product_subcategory.sql
+[0m23:08:49.339146 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee_department_history.sql
+[0m23:08:49.341255 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__employee.sql
+[0m23:08:49.343848 [debug] [MainThread]: 1699: static parser successfully parsed staging/humanresources/stg_humanresources__department.sql
+[0m23:08:49.345933 [debug] [MainThread]: 1603: static parser failed on incremental/increment__employee.sql
+[0m23:08:49.352442 [debug] [MainThread]: 1602: parser fallback to jinja rendering on incremental/increment__employee.sql
+[0m23:08:49.353804 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_product.sql
+[0m23:08:49.356652 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_employee.sql
+[0m23:08:49.359026 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_territory.sql
+[0m23:08:49.361454 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/fct_sales.sql
+[0m23:08:49.363787 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_customer.sql
+[0m23:08:49.382850 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_customer.sql
+[0m23:08:49.384250 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_subcategory.sql
+[0m23:08:49.387236 [debug] [MainThread]: 1603: static parser failed on marts/warehouse/dim_products.sql
+[0m23:08:49.402810 [debug] [MainThread]: 1602: parser fallback to jinja rendering on marts/warehouse/dim_products.sql
+[0m23:08:49.404189 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_production__product_category.sql
+[0m23:08:49.406963 [debug] [MainThread]: 1699: static parser successfully parsed marts/warehouse/dim_date.sql
+[0m23:08:49.443303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1043bf3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084e3760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1084e3be0>]}
+[0m23:08:49.443678 [debug] [MainThread]: Flushing usage events
+[0m23:08:49.560681 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_PASSWORD'
